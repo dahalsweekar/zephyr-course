@@ -1,0 +1,9 @@
+mach create "stm32f4_discovery"
+
+machine LoadPlatformDescription @platforms/boards/stm32f4_discovery.repl
+
+sysbus LoadELF @C:/Users/Asus/zephyr-demo/zephyr-course/build/zephyr/zephyr.elf
+
+peripherals
+
+start
