@@ -1,0 +1,105 @@
+
+# Homework l3-task1
+
+menuconfig LED_SUBSYSTEM
+    bool "LED Subsystem"
+    default y
+    help
+        Enable the LED subsystem for controlling LEDs.
+
+if LED_SUBSYSTEM
+
+# LED blink sleep time
+choice
+    prompt "Select the LED blink time"
+    default BLINK_SLEEP_TIME_250
+    
+    config BLINK_SLEEP_TIME_250
+        bool "very fast"
+
+    config BLINK_SLEEP_TIME_1000
+        bool "fast"
+
+    config BLINK_SLEEP_TIME_2000
+        bool "normal"
+
+    config BLINK_SLEEP_TIME_3000
+        bool "slow"
+    
+    config BLINK_SLEEP_TIME_5000
+        bool "very slow"
+endchoice
+
+config BLINK_SLEEP_TIME_MS
+    int 
+    default 250 if BLINK_SLEEP_TIME_250
+    default 1000 if BLINK_SLEEP_TIME_1000
+    default 2000 if BLINK_SLEEP_TIME_2000
+    default 3000 if BLINK_SLEEP_TIME_3000
+    default 5000 if BLINK_SLEEP_TIME_5000
+    default 0
+    help
+        LED Blink rate
+
+# Menu for Advanced LED settings
+menu "Advanced LED settings"
+
+config LED_BRIGHTNESS
+    int "LED brightness (0-100)"
+    default 100
+    range 0 100
+
+config LED_FADE_DURATION_MS
+    int "Fade duration (ms)"
+    default 500
+    range 1 5000
+
+# Menu for expert settings
+menu "Expert settings"
+
+# Toggle for LED debugging
+menuconfig ENABLE_LED_DEBUG
+    bool "Enable LED debugging"
+    default n
+
+if ENABLE_LED_DEBUG
+
+# Choice for LED debugging
+choice 
+    prompt "Select the LED debugging level"
+    default LED_DEBUG_BASIC
+
+    config LED_DEBUG_BASIC
+        bool "Basic"
+    config LED_DEBUG_VERBOSE
+        bool "Verbose"
+endchoice
+endif
+
+
+# Toggle for custom blink pattern
+menuconfig CUSTOM_BLINK_PATTERN
+    bool "Custom blink pattern"
+    default y
+
+if CUSTOM_BLINK_PATTERN
+
+# Choice for custom blink pattern
+choice
+    prompt "Select the LED blink pattern"
+    default LED_BLINK_PATTERN_FAST
+
+    config LED_BLINK_PATTERN_FAST
+        bool "Fast"
+    config LED_BLINK_PATTERN_SLOW
+        bool "Slow"
+endchoice
+
+endif
+
+endmenu # end menu for expert settings
+endmenu # end menu for advanced LED settings
+
+endif # end if LED_SUBSYSTEM
+
+source "Kconfig.zephyr"
