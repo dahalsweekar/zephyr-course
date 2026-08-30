@@ -102,4 +102,11 @@ endmenu # end menu for advanced LED settings
 
 endif # end if LED_SUBSYSTEM
 
+# homework l4-task1
+
+config APP_HEARTBEAT_PERIOD_MS
+    int "APP Heartbeat Period (ms)"
+    default 500
+    range 100 2000
+
 source "Kconfig.zephyr"

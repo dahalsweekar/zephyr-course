@@ -1,0 +1,29 @@
+/ {
+	aliases {
+		warningled = &orange_led;
+	};
+
+	leds {
+		compatible = "gpio-leds";
+
+		orange_led: led_3 {
+			gpios = <&gpiod 13 GPIO_ACTIVE_LOW>;
+			label = "orange";
+		};
+
+		green_led: led_4 {
+			gpios = <&gpiod 12 GPIO_ACTIVE_LOW>;
+			label = "green";
+		};
+
+		red_led: led_5 {
+			gpios = <&gpiod 14 GPIO_ACTIVE_LOW>;
+			label = "red";
+		};
+
+		blue_led: led_6 {
+			gpios = <&gpiod 15 GPIO_ACTIVE_LOW>;
+			label = "blue";
+		};
+	};
+};

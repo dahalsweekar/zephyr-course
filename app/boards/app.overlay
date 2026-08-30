@@ -1,0 +1,7 @@
+/* homework l4-task1 */
+
+/ {
+	aliases {
+		app-led = "/leds/led_3";
+	};
+};
