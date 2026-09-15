@@ -1,0 +1,278 @@
+[DOCUMENT]
+TITLE: Semaphores
+REQ_PREFIX: ZEP-SRS-5-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: software_requirements.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-1
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Counting Semaphore Definition At Compile Time
+STATEMENT: >>>
+The Zephyr RTOS shall provide a mechanism to define and initialize a semaphore at compile time.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-2
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Counting Semaphore Definition At Run Time
+STATEMENT: >>>
+The Zephyr RTOS shall provide a mechanism to define and initialize a semaphore at runtime.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-3
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Maximum limit of a semaphore
+STATEMENT: >>>
+The Zephyr RTOS shall define the maximum limit of a semaphore when the semaphore is used for counting purposes and does not have an explicit limit.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-4
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Initialialization with maximum count value
+STATEMENT: >>>
+When initializing a counting semaphore, the maximum permitted count a semaphore
+can have shall be set.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-5
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Initial semaphore value
+STATEMENT: >>>
+When initializing a counting semaphore, the initial semaphore value shall be set.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-6
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore acquisition mechanism
+STATEMENT: >>>
+The Zephyr RTOS shall provide a mechanism allowing threads to acquire a semaphore.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-7
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore acquisition with count greater than zero
+STATEMENT: >>>
+While the semaphore's count is greater than zero, the requesting thread shall acquire
+the semaphore and decrement its count.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-8
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore acquisition with zero count
+STATEMENT: >>>
+While the semaphore's count is zero, the requesting thread shall be blocked until the semaphore is released by another thread.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-9
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore acquisition timeout
+STATEMENT: >>>
+When attempting to acquire a semaphore, the Zephyr RTOS shall accept options that specify timeout periods, allowing threads to set a maximum wait time for semaphore acquisition.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-10
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore acquisition timeout error handling
+STATEMENT: >>>
+When attempting to acquire a semaphore, where the semaphore is not acquired within the
+specified time, the Zephyr RTOS shall return an error indicating a timeout.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-11
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore acquisition no wait error handling
+STATEMENT: >>>
+When attempting to acquire a semaphore, where the current count is zero and no timeout time was provided, the Zephyr RTOS
+shall return an error indicating the semaphore is busy.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-12
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore release
+STATEMENT: >>>
+The Zephyr RTOS shall provide a mechanism allowing threads to release a semaphore.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-13
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore count increment on release
+STATEMENT: >>>
+The Zephyr RTOS shall increment the semaphore's count upon release.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-14
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Highest-priority waiter unblocked on release
+STATEMENT: >>>
+When there are threads waiting on the semaphore, the highest-priority waiting thread
+shall be unblocked and acquire the semaphore.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-15
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Checking semaphore count
+STATEMENT: >>>
+The Zephyr RTOS shall provide a mechanism for threads to check the current count of a semaphore without acquiring it.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-16
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore reset
+STATEMENT: >>>
+The Zephyr RTOS shall provide a mechanism that resets the semaphore count to zero.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-17
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore acquisitions abort after reset
+STATEMENT: >>>
+When a semaphore is reset, the Zephyr RTOS shall abort all pending take operations on the
+semaphore, returning to the affected threads the same error used to indicate a wait timeout.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-18
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore Initialization Option Validation
+STATEMENT: >>>
+When initializing a counting semaphore, where the maximum permitted count of a semaphore is invalid,
+then the Zephyr RTOS shall return an error indicating invalid values.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-19
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore release at maximum count
+STATEMENT: >>>
+When a semaphore is released while its count is already at the maximum permitted count, the Zephyr RTOS shall leave the count unchanged.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14
+
+[REQUIREMENT]
+UID: ZEP-SRS-5-20
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Semaphore operations from interrupt context
+STATEMENT: >>>
+The Zephyr RTOS shall allow a semaphore to be released from an interrupt service routine, and to be acquired from an interrupt service routine when no waiting is requested.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-14

@@ -1,0 +1,89 @@
+[DOCUMENT]
+TITLE: Zephyr Software Requirements
+REQ_PREFIX: ZEP-SRS-0-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: software_requirements.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[DOCUMENT_FROM_FILE]
+FILE: hw_arch_interface.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: c_library.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: device_driver_api.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: exception_and_error_handling.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: system_initialization.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: file_system.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: interrupts.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: logging.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: memory_protection.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: memory_objects.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: data_passing.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: mutex.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: semaphore.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: power_management.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: thread_communication.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: thread_scheduling.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: threads.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: timers.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: tracing.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: condition_variables.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: queues.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: lifos.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: fifos.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: mailboxes.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: stacks.sdoc
+
+[DOCUMENT_FROM_FILE]
+FILE: atomic_service.sdoc

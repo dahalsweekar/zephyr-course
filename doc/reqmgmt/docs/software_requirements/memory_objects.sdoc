@@ -1,0 +1,43 @@
+[DOCUMENT]
+TITLE: Memory Objects
+REQ_PREFIX: ZEP-SRS-9-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: software_requirements.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SRS-9-1
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Objects
+TITLE: Dynamic Memory Allocation
+STATEMENT: >>>
+The Zephyr RTOS shall allow threads to dynamically allocate variable-sized memory regions from a specified range of memory.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want my application to be able to dynamically allocate memory of a application defined size.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-9-2
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Objects
+TITLE: Memory Slab Object
+STATEMENT: >>>
+The Zephyr RTOS shall allow threads to dynamically allocate fixed-sized memory regions from a specified range of memory.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want a most efficient and least fragmentation prone dynamic memory allocation mechanism.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9

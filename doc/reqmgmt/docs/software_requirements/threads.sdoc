@@ -1,0 +1,199 @@
+[DOCUMENT]
+TITLE: Threads
+REQ_PREFIX: ZEP-SRS-1-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: software_requirements.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SRS-1-1
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Creating threads
+STATEMENT: >>>
+The Zephyr RTOS shall provide an interface to create (start) a thread.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-15
+- TYPE: Parent
+  VALUE: ZEP-SYRS-16
+
+[REQUIREMENT]
+UID: ZEP-SRS-1-2
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Setting thread priority
+STATEMENT: >>>
+The Zephyr RTOS shall provide an interface to set a thread's priority.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-17
+
+[REQUIREMENT]
+UID: ZEP-SRS-1-3
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Suspending a thread
+STATEMENT: >>>
+The Zephyr RTOS shall provide an interface to suspend a thread.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-15
+- TYPE: Parent
+  VALUE: ZEP-SYRS-16
+
+[REQUIREMENT]
+UID: ZEP-SRS-1-4
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Resuming a suspended thread
+STATEMENT: >>>
+The Zephyr RTOS shall provide an interface to resume a suspended thread.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-15
+- TYPE: Parent
+  VALUE: ZEP-SYRS-16
+
+[REQUIREMENT]
+UID: ZEP-SRS-1-5
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Resuming a suspended thread after a timeout
+STATEMENT: >>>
+The Zephyr RTOS shall provide an interface to resume a suspended thread after a timeout.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-15
+- TYPE: Parent
+  VALUE: ZEP-SYRS-16
+
+[REQUIREMENT]
+UID: ZEP-SRS-1-6
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Deleting a thread
+STATEMENT: >>>
+The Zephyr RTOS shall provide an interface to delete (end) a thread.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-15
+- TYPE: Parent
+  VALUE: ZEP-SYRS-16
+
+[REQUIREMENT]
+UID: ZEP-SRS-1-7
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Thread states
+STATEMENT: >>>
+Threads shall have different states to fulfill the Life-cycle of a thread
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user, I want to know in what state a specific thread is.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-15
+- TYPE: Parent
+  VALUE: ZEP-SYRS-16
+
+[REQUIREMENT]
+UID: ZEP-SRS-1-8
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Thread stack objects
+STATEMENT: >>>
+Every Thread shall have it's own stack.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to be able to configure the stack size of a thread. And every thread shall have it's own dedicated stack.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-15
+- TYPE: Parent
+  VALUE: ZEP-SYRS-16
+
+[REQUIREMENT]
+UID: ZEP-SRS-1-9
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Thread privileges
+STATEMENT: >>>
+The Zephyr RTOS shall provide an interface to create threads with defined privilege.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-15
+- TYPE: Parent
+  VALUE: ZEP-SYRS-16
+
+[REQUIREMENT]
+UID: ZEP-SRS-1-10
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Scheduling multiple threads
+STATEMENT: >>>
+The Zephyr RTOS shall provide an interface to schedule multiple threads.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-16
+
+[REQUIREMENT]
+UID: ZEP-SRS-1-11
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Thread Options
+STATEMENT: >>>
+The Zephyr RTOS shall support a set of thread options.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user, I want to be able to pass specific option to a thread.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-15
+- TYPE: Parent
+  VALUE: ZEP-SYRS-16
+
+[REQUIREMENT]
+UID: ZEP-SRS-1-12
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Thread Custom Data
+STATEMENT: >>>
+Every thread shall have a custom data area.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user, I want to be able to set a thread specific custom area for every thread I create and which can be used only by the thread itself or the can be used by the application
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-15
+- TYPE: Parent
+  VALUE: ZEP-SYRS-16

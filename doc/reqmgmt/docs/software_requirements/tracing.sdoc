@@ -1,0 +1,95 @@
+[DOCUMENT]
+TITLE: Tracing
+REQ_PREFIX: ZEP-SRS-10-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: software_requirements.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SRS-10-1
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Tracing
+TITLE: Initializing a trace
+STATEMENT: >>>
+Zephyr shall provide an interface to initialize a trace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-19
+
+[REQUIREMENT]
+UID: ZEP-SRS-10-2
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Tracing
+TITLE: Triggering a trace
+STATEMENT: >>>
+Zephyr shall provide an interface to trigger a trace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-19
+
+[REQUIREMENT]
+UID: ZEP-SRS-10-3
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Tracing
+TITLE: Dumping trace results
+STATEMENT: >>>
+Zephyr shall provide an interface to dump results from a trace.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-19
+
+[REQUIREMENT]
+UID: ZEP-SRS-10-4
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Tracing
+TITLE: Removing trace data
+STATEMENT: >>>
+Zephyr shall provide an interface to remove trace data.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-19
+
+[REQUIREMENT]
+UID: ZEP-SRS-10-5
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Tracing
+TITLE: Tracing Object Identification
+STATEMENT: >>>
+Zephyr shall provide an interface to identify the objects being traced.
+<<<
+USER_STORY: >>>
+As a Zephyr OS user, I want to be able to give each object which I create a name / label in order to be able to identify them in a trace log.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-19
+
+[REQUIREMENT]
+UID: ZEP-SRS-10-6
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Tracing
+TITLE: Tracing Non-Interference
+STATEMENT: >>>
+Zephyr shall prevent the tracing functionality from interfering with normal operations.
+<<<
+USER_STORY: >>>
+As a Zephyr OS user, I want that the trace functionality do not interfere or slow down the operation system functionality.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-19

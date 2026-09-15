@@ -1,0 +1,297 @@
+[DOCUMENT]
+TITLE: Memory protection
+REQ_PREFIX: ZEP-SRS-8-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: software_requirements.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-1
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Memory Protection
+STATEMENT: >>>
+The Zephyr RTOS shall support memory protection features to isolate a thread's memory region.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want memory to be allocated and protected to my application threads preventing mistakenly access to foreign memory as far as the hardware allows.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-2
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Granting access to kernel objects
+STATEMENT: >>>
+The Zephyr RTOS shall provide a mechanism to grant user threads access to kernel objects.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want, from the user space, under certain conditions, access to kernel objects.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-3
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Separation between user and kernel threads for memory access
+STATEMENT: >>>
+The Zephyr RTOS shall be able to differentiate between user threads and kernel threads for memory access.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want, from the kernel space, unconditioned access to kernel objects.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-4
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Safely handle unimplemented calls or invalid system calls
+STATEMENT: >>>
+The Zephyr RTOS shall have a defined behaviour when an invocation of an unimplemented system call is made.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want Zephyr OS to indicate any unimplemented system call by an appropriate error message.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-5
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Response to invalid system call IDs
+STATEMENT: >>>
+The Zephyr RTOS shall have a defined behaviour when an invalid system call ID is used.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want Zephyr OS to indicate invalid system call by an appropriate error message.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-6
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Prevent user threads creating higher priority threads
+STATEMENT: >>>
+The Zephyr RTOS shall prevent user threads from creating new threads that are higher priority than the caller.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-7
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Revoking threads permissions on a kernel object
+STATEMENT: >>>
+The Zephyr RTOS shall support revoking permission to a kernel object. User mode threads may only revoke their own access to an object.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to be protected against other user threads changing access to kernel objects of my thread.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-8
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Prevent user threads creating supervisor threads
+STATEMENT: >>>
+The Zephyr RTOS shall prevent user threads from creating kernel threads.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to be protected against user threads creating higher privileged kernel/supervisor threads.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-9
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Reduced Privilege Level Threads
+STATEMENT: >>>
+The Zephyr RTOS shall allow the creation of threads that run in reduced privilege level.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to be able to create lower privileged threads than my own.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-10
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: User Mode Threads Performing Privileged Operations
+STATEMENT: >>>
+The Zephyr RTOS shall provide system calls to allow user mode threads to perform privileged operations.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to be able to perform privileged operations in the kernel mode through a well defined interface.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-11
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: User mode handling of detected stack overflow
+STATEMENT: >>>
+The Zephyr RTOS shall support a defined mechanism for user mode handling a of detected stack overflow.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want, when a stack overflow is detected, to be able to implement a graceful, application defined handling of the exception.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-12
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Stack Overflow Detection
+STATEMENT: >>>
+The Zephyr RTOS shall support detection of stack overflows.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to get an indication when a stack overflow occurs at least during debugging / the development phase, and for safety applications also in a release version of my application.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-13
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Boot Time Memory Access Policy
+STATEMENT: >>>
+The Zephyr RTOS shall support configurable access to memory during boot time.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-14
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: System Call Handler Functions
+STATEMENT: >>>
+The Zephyr RTOS shall provide helper functions for system call handler functions to validate the inputs passed in from user mode before invoking the implementation function to protect the kernel.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want Zepyhr OS to validate system call parameters passed from the user mode to the kernel mode to avoid crashes and undefined behaviour.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-15
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: System Call C strings in user mode
+STATEMENT: >>>
+The Zephyr RTOS shall support system calls to be able to safely accept C strings passed in from user mode.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want Zepyhr OS to validate system call string type parameters passed from the user mode to the kernel mode to avoid crashes and undefined behaviour.
+
+e.g.
+
+- verify the string length is smaller or equal to the syscalls defined max.
+- verify that the length type does not overflow when allocating one more byte ???
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-16
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Tracking kernel objects in used by user mode threads
+STATEMENT: >>>
+The Zephyr RTOS shall track kernel objects that are used by user mode threads.
+
+Note: this means Zephyr shall track the resources used by the user mode thread (associate this with a user story).
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-17
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Granting threads access to specific memory
+STATEMENT: >>>
+The Zephyr RTOS shall have an interface to request access to specific memory after initial allocation.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to be able to request read-only or read-write access to a dedicated memory area/pool during runtime.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9
+
+[REQUIREMENT]
+UID: ZEP-SRS-8-18
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Protection
+TITLE: Assigning memory pools to act as a thread resource pool
+STATEMENT: >>>
+The Zephyr RTOS shall support assigning a memory pool to act as that thread's resource pool.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to be able, during runtime from the kernel, to request a memory area/pool which is exclusively available to the requesting thread protected against access from other threads.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-9

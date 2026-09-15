@@ -1,0 +1,400 @@
+[DOCUMENT]
+TITLE: Zephyr System Requirements
+REQ_PREFIX: ZEP-SYRS-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: system_requirements.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-1
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Hardware Architecture Interface
+TITLE: Architecture Layer Interface
+STATEMENT: >>>
+The Zephyr RTOS shall provide a framework to communicate with a set of hardware architectural services.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to be able to easily switch my application to a different MCU architecture (x86, ARM Cortex-M/A, RISCV etc.).
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-2
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Hardware Architecture Interface
+TITLE: Support multiprocessor management
+STATEMENT: >>>
+The Zephyr RTOS shall support symmetric multiprocessing on multiple cores.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to use Zephyr OS on multi core (SMP-)MCUs/MPUs.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-1
+
+[REQUIREMENT]
+UID: ZEP-SYRS-3
+STATUS: Draft
+TYPE: Functional
+COMPONENT: C Library
+TITLE: Support Subset of Standard C Library
+STATEMENT: >>>
+The Zephyr RTOS shall support a subset of the standard C library.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to have a selection of standard C library implementations e.g. a full extend and a minimal with a smaller footprint or a particular fast executing implementation.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-4
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Device Drivers
+TITLE: Device Driver Abstraction
+STATEMENT: >>>
+The Zephyr RTOS shall provide a framework for managing device drivers and peripherals.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want my application to be portable between different MCU architectures (ARM Cortex-M/A, Intel x86, RISCV etc.) and MCU vendors (STM, NXP, Intel, etc.) without having to change the MCU peripherals access.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-5
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Exception and Error Handling
+TITLE: Fatal error and exception handling
+STATEMENT: >>>
+The Zephyr RTOS shall provide a framework for error and exception handling.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want errors and exceptions to handled and react according to my applications requirements (e.g. reach/establish the applications safety state).
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-6
+STATUS: Draft
+TYPE: Functional
+COMPONENT: File Systems
+TITLE: Common File system operation support
+STATEMENT: >>>
+The Zephyr RTOS shall provide a framework for managing file system access.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want a posix / c like file system access to store data.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-7
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Interrupts
+TITLE: Interrupt Management
+STATEMENT: >>>
+The Zephyr RTOS shall provide a framework for interrupt and interrupt service routine management.
+<<<
+USER_STORY: >>>
+As the Zephyr RTOS user I want the Kernel to provide abstracted interfaces to
+the platform enabling me to implement standard interrupts interrupt service routines
+without detailed knowledge of the platform architecture and programming model.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-20
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Interrupts
+TITLE: Direct ISR, Platform Specific helpers.
+STATEMENT: >>>
+Zephyr RTOS shall support development of direct ISRs by providing platform specific
+code fragments and factory functions including, minimal header instructions,
+minimal footer instructions, low power termination, and ISR construction.
+<<<
+USER_STORY: >>>
+As the Zephyr RTOS user I want the Kernel to provide support for implementing standard low latency
+and low power interrupt service routines without detailed knowledge of the platform architecture
+and programming model.
+<<<
+RELATIONS:
+- TYPE: Parent
+  VALUE: ZEP-SYRS-7
+
+[REQUIREMENT]
+UID: ZEP-SYRS-8
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Logging
+TITLE: Logging
+STATEMENT: >>>
+The Zephyr RTOS shall provide a framework for logging events.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to be able to log application defined events as well as framework exceptions.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-9
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Memory Management
+TITLE: Memory Management framework
+STATEMENT: >>>
+The Zephyr RTOS shall support a memory management framework.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want memory to be allocated and protected to my application threads preventing mistakenly access to foreign memory as far as the hardware allows.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-10
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Power Management
+TITLE: Power Management
+STATEMENT: >>>
+The Zephyr RTOS shall provide an interface to control hardware power states.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to be able to control the power mode of the MCU and its peripherals to take advantage of the hardware features and to be able to implement low power or battery driven long life applications.
+<<<
+
+[[SECTION]]
+TITLE: Multi core and SMP
+
+[REQUIREMENT]
+UID: ZEP-SYRS-11
+STATUS: Draft
+TYPE: Functional
+COMPONENT: SMP and Multi core
+TITLE: Multiple CPU scheduling
+STATEMENT: >>>
+The Zephyr RTOS shall support scheduling of threads on multiple hardware CPUs.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want Zephyr OS to run on MCUs/CPUs with one or more CPU cores.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-12
+STATUS: Draft
+TYPE: Functional
+COMPONENT: SMP and Multi core
+TITLE: Scheduling
+STATEMENT: >>>
+The Zephyr RTOS shall provide an interface to assign a thread to a specific CPU.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user, I want to be able to control which thread will run on which CPU.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Thread Synchronization
+
+[REQUIREMENT]
+UID: ZEP-SYRS-13
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Mutex
+TITLE: Mutex
+STATEMENT: >>>
+The Zephyr RTOS shall provide an interface for managing communication between threads.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user I want to able to exchange information between threads in a thread-safe manner guaranteeing data consistence.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-14
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Semaphore
+TITLE: Counting Semaphore
+STATEMENT: >>>
+The system shall implement a semaphore synchronization primitive for coordinating access to shared resources among multiple threads.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Threads
+
+[REQUIREMENT]
+UID: ZEP-SYRS-15
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Thread support
+STATEMENT: >>>
+The Zephyr RTOS shall support threads.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user, I want to be able to have support for the kernel objects named threads for processing work.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-16
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Thread management
+STATEMENT: >>>
+The Zephyr RTOS shall provide a framework for managing multiple threads of execution.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user, I want to be able to manage the execute of multiple threads with different priorities.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-17
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Threads
+TITLE: Thread priority
+STATEMENT: >>>
+Threads shall have a priority.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user, I want to be able to give my threads different priorities for execution.
+<<<
+
+[[/SECTION]]
+
+[REQUIREMENT]
+UID: ZEP-SYRS-18
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Timers
+TITLE: Timers
+STATEMENT: >>>
+The Zephyr RTOS shall provide a framework for managing time-based events.
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user, I want to start, suspend, resume and stop timers which shall trigger an event on a set expiration time.
+<<<
+
+[REQUIREMENT]
+UID: ZEP-SYRS-19
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Tracing
+TITLE: Tracing
+STATEMENT: >>>
+Zepyhr shall provide a framework mechanism for tracing low level system operations  (NOTE: system calls, interrupts, kernel calls, thread, synchronization, etc.).
+<<<
+USER_STORY: >>>
+As a Zephyr RTOS user, I want to be able to trace different OS operations.
+<<<
+
+[[SECTION]]
+TITLE: Condition Variables
+
+[REQUIREMENT]
+UID: ZEP-SYRS-21
+STATUS: Draft
+TYPE: Non-Functional
+COMPONENT: Condition Variables
+TITLE: Condition Variables
+STATEMENT: >>>
+The Zephyr RTOS shall provide a framework to synchronize threads based on a condition variable.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Queues
+
+[REQUIREMENT]
+UID: ZEP-SYRS-22
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Queues
+TITLE: Queues data passing
+STATEMENT: >>>
+The Zephyr RTOS shall implement a queue which can be used to pass data between threads and interrupt service routines.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: LIFOs
+
+[REQUIREMENT]
+UID: ZEP-SYRS-23
+STATUS: Draft
+TYPE: Functional
+COMPONENT: LIFOs
+TITLE: LIFOs data passing
+STATEMENT: >>>
+The Zephyr RTOS shall implement a LIFOs which can be used to pass data between threads and interrupt service routines.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: FIFOs
+
+[REQUIREMENT]
+UID: ZEP-SYRS-24
+STATUS: Draft
+TYPE: Functional
+COMPONENT: FIFOs
+TITLE: FIFOs data passing
+STATEMENT: >>>
+The Zephyr RTOS shall implement FIFOs which can be used to pass data between threads and interrupt service routines.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Mailboxes
+
+[REQUIREMENT]
+UID: ZEP-SYRS-25
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Mailboxes
+TITLE: Mailboxes
+STATEMENT: >>>
+The Zephyr RTOS shall provide a framework to pass messages of arbitrary size between threads.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Atomic Service
+
+[REQUIREMENT]
+UID: ZEP-SYRS-26
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Atomic Service
+TITLE: Atomic Service
+STATEMENT: >>>
+The Zephyr RTOS shall provide an interface to perform atomic operations on variables, guaranteeing that all reads and writes are free from tearing across all processors.
+<<<
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: Stacks
+
+[REQUIREMENT]
+UID: ZEP-SYRS-30
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Stacks
+TITLE: Stacks
+STATEMENT: >>>
+The Zephyr RTOS shall implement a stack which can be used to pass data between threads and interrupt service routines.
+<<<
+
+[[/SECTION]]
