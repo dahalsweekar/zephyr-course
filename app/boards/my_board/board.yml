@@ -1,0 +1,6 @@
+board:
+  name: my_board
+  full_name: MY BOARD
+  vendor: st
+  socs:
+    - name: stm32f401xe
