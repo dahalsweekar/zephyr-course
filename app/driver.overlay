@@ -1,0 +1,26 @@
+/ {
+    our_driver0: our_driver {
+        compatible = "our,driver";
+        status = "okay";
+    };
+
+     our_driver1: our_driver1 {
+        compatible = "our,driver";
+        status = "okay";
+    };
+
+    aliases {
+		warningled = &red_led;
+	};
+
+    leds {
+		compatible = "gpio-leds";
+
+		red_led: led_5 {
+			gpios = <&gpiod 14 GPIO_ACTIVE_LOW>;
+			label = "red";
+		};
+
+	};
+
+};

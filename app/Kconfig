@@ -114,3 +114,4 @@ config BOARD_TARGET
     default "$(BOARD)@$(BOARD_REVISION)/$(BOARD_QUALIFIERS)"
     
 source "Kconfig.zephyr"
+rsource "drivers/our_driver/Kconfig"
