@@ -2,6 +2,7 @@
 #include <zephyr/drivers/sensor.h>
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
+#include "../drivers/our_driver/our_driver.h"
 
 /* The devicetree node identifier for the "led0" alias. */
 #define LED_NODE DT_ALIAS(led0)
@@ -17,6 +18,7 @@ namespace{
         int ret = sensor_channel_get(driver, SENSOR_CHAN_AMBIENT_TEMP, &val);
         int ret1 = sensor_sample_fetch(driver);
         LOG_INF("Channel ret fetch=%d get=%d", ret1, ret);
+        our_driver_set_led_blinkrate(driver, 100);
     }
 
     void led_sensor(){
@@ -39,7 +41,6 @@ int main(void)
         led_state = !led_state;
         LOG_INF("LED state: %s", led_state ? "ON" : "OFF");
         k_msleep(CONFIG_APP_HEARTBEAT_PERIOD_MS);
-
         printk("Hello World! %s\n", CONFIG_BOARD_TARGET);
     }
     return 0;

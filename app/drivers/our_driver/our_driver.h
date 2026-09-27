@@ -1,0 +1,1 @@
+extern "C" int our_driver_set_led_blinkrate(const struct device *dev, int rate);

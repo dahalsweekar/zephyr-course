@@ -12,6 +12,12 @@ LOG_MODULE_REGISTER(our_driver, LOG_LEVEL_INF);
 
 bool led_state = false;
 
+int our_driver_set_led_blinkrate(const struct device* dev, int rate){
+
+    LOG_INF("The fake blink rate for this device is: %d", rate);
+    return 0;
+}
+
 static int channel_fetch_implementation(const struct device *dev, enum sensor_channel chan){
 
     LOG_INF("Hello from Sensor Fetch");
