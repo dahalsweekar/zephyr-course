@@ -54,6 +54,12 @@ static DEVICE_API(sensor, api_iomico_homework) = {
 static int init(const struct device* dev){
     LOG_INF("Device Initialized");
 
+    bool is_ready = device_is_ready(dev);
+
+    LOG_INF("Device Name: %s | Ready: %s", 
+            dev->name, 
+            is_ready ? "true" : "false");
+
     return 0;
 }
 
