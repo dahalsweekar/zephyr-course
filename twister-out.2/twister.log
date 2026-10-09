@@ -1,0 +1,52 @@
+2026-10-09 16:45:20,818 - twister - INFO - Using Ninja..
+2026-10-09 16:45:20,889 - twister - INFO - Zephyr version: v4.4.0-13939-g2f0bc11264a8
+2026-10-09 16:45:20,892 - twister - DEBUG - Running cmake script /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-10-09 16:45:20,893 - twister - DEBUG - Calling cmake: /usr/bin/cmake -DFORMAT=json -P /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-10-09 16:45:21,103 - twister - DEBUG - Finished running /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-10-09 16:45:21,103 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-10-09 16:45:21,761 - twister - DEBUG - Reading testsuite configuration files under /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf...
+2026-10-09 16:45:21,761 - twister - DEBUG - Found possible testsuite in /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+2026-10-09 16:45:21,766 - twister - DEBUG - No duplicates found.
+2026-10-09 16:45:21,766 - twister - DEBUG -  platform filter: ['stm32f4_disco']
+2026-10-09 16:45:21,766 - twister - DEBUG - platform_pattern: []
+2026-10-09 16:45:21,766 - twister - DEBUG -    vendor filter: []
+2026-10-09 16:45:21,766 - twister - DEBUG -      arch_filter: None
+2026-10-09 16:45:21,766 - twister - DEBUG -       tag_filter: None
+2026-10-09 16:45:21,766 - twister - DEBUG -      exclude_tag: None
+2026-10-09 16:45:21,766 - twister - DEBUG - Checking platform filter: ['stm32f4_disco']
+2026-10-09 16:45:21,766 - twister - INFO - Building initial testsuite list...
+2026-10-09 16:45:21,766 - twister - INFO - Built testsuite list in 0.00 seconds
+2026-10-09 16:45:21,767 - twister - INFO - Writing JSON report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/testplan.json
+2026-10-09 16:45:21,780 - twister - INFO - JOBS: 16
+2026-10-09 16:45:21,781 - twister - INFO - Adding tasks to the queue...
+2026-10-09 16:45:21,781 - twister - DEBUG - adding stm32f4_disco/stm32f407xx/zephyr/gnu/homework.unit.ring_buf
+2026-10-09 16:45:21,782 - twister - INFO - Added initial list of jobs to queue
+2026-10-09 16:45:21,788 - twister - DEBUG - Running cmake on /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf for stm32f4_disco/stm32f407xx
+2026-10-09 16:45:21,788 - twister - DEBUG - Calling cmake: /usr/bin/cmake -B/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf -DTC_RUNID=567cf1f269c2fe396fab7c1f5b3ee00f -DTC_NAME=homework.unit.ring_buf -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/home/sweekar/Projects/zephyr-demo/.venv/bin/python3 -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf -DBOARD=stm32f4_disco/stm32f407xx
+2026-10-09 16:45:21,809 - twister - DEBUG - Launched 16 jobs
+2026-10-09 16:45:31,742 - twister - DEBUG - Finished running cmake /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf for stm32f4_disco/stm32f407xx in 9.95 seconds
+2026-10-09 16:45:31,745 - twister - DEBUG - build test: stm32f4_disco/stm32f407xx/zephyr/gnu/homework.unit.ring_buf
+2026-10-09 16:45:31,745 - twister - DEBUG - Building /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf for stm32f4_disco/stm32f407xx
+2026-10-09 16:45:31,746 - twister - DEBUG - Running /usr/bin/cmake --build /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf
+2026-10-09 16:45:34,604 - twister - ERROR - stm32f4_disco/stm32f407xx homework.unit.ring_buf                             [31mERROR[39m: Build failure
+2026-10-09 16:45:34,605 - twister - ERROR - see: [33m/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/build.log[39m
+2026-10-09 16:45:34,609 - twister - INFO - 1 test scenarios (1 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-10-09 16:45:34,613 - twister - INFO - [32m0 of 1[39m executed test configurations passed (0.00%), 0 built (not run), 0 failed, [31m1[39m errored, with no warnings in 13.80 seconds.
+2026-10-09 16:45:34,613 - twister - INFO - 0 of 8 executed test cases passed (0.00%), 8 blocked on 1 out of total 1708 platforms (0.06%).
+2026-10-09 16:45:34,613 - twister - INFO - [32m0[39m test configurations executed on platforms, [36m1[39m test configurations were only built.
+2026-10-09 16:45:34,614 - twister - INFO - Saving reports...
+2026-10-09 16:45:34,614 - twister - INFO - Writing JSON report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/twister.json
+2026-10-09 16:45:34,615 - twister - INFO - Writing xunit report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/twister.xml...
+2026-10-09 16:45:34,616 - twister - INFO - Writing xunit report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/twister_report.xml...
+2026-10-09 16:45:34,616 - twister - INFO - -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+2026-10-09 16:45:34,616 - twister - INFO - The following issues were found (showing the top 10 items):
+2026-10-09 16:45:34,616 - twister - INFO - 1) homework.unit.ring_buf on stm32f4_disco/stm32f407xx (zephyr/gnu) error (Build failure - error: expected ';' before 'do')
+2026-10-09 16:45:34,616 - twister - INFO - 
+2026-10-09 16:45:34,617 - twister - INFO - To rerun the tests, call twister using the following commandline:
+2026-10-09 16:45:34,617 - twister - INFO - west twister -p <PLATFORM> -s <TEST ID>, for example:
+2026-10-09 16:45:34,617 - twister - INFO - 
+2026-10-09 16:45:34,617 - twister - INFO - west twister -p stm32f4_disco/stm32f407xx -s homework.unit.ring_buf
+2026-10-09 16:45:34,617 - twister - INFO - or with west:
+2026-10-09 16:45:34,617 - twister - INFO - west build -p -b stm32f4_disco/stm32f407xx tests/ring_buf -T homework.unit.ring_buf
+2026-10-09 16:45:34,617 - twister - INFO - -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+2026-10-09 16:45:34,617 - twister - INFO - Run completed

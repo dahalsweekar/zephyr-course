@@ -1,0 +1,32 @@
+2026-10-09 16:44:53,285 - twister - INFO - Using Ninja..
+2026-10-09 16:44:53,488 - twister - INFO - Zephyr version: v4.4.0-13939-g2f0bc11264a8
+2026-10-09 16:44:53,491 - twister - DEBUG - Running cmake script /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-10-09 16:44:53,492 - twister - DEBUG - Calling cmake: /usr/bin/cmake -DFORMAT=json -P /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-10-09 16:44:53,791 - twister - DEBUG - Finished running /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-10-09 16:44:53,791 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-10-09 16:44:54,851 - twister - DEBUG - Reading testsuite configuration files under /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf...
+2026-10-09 16:44:54,851 - twister - DEBUG - Found possible testsuite in /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+2026-10-09 16:44:54,852 - twister - DEBUG - No duplicates found.
+2026-10-09 16:44:54,853 - twister - DEBUG -  platform filter: ['stm32f4_disco']
+2026-10-09 16:44:54,853 - twister - DEBUG - platform_pattern: []
+2026-10-09 16:44:54,853 - twister - DEBUG -    vendor filter: []
+2026-10-09 16:44:54,853 - twister - DEBUG -      arch_filter: None
+2026-10-09 16:44:54,853 - twister - DEBUG -       tag_filter: None
+2026-10-09 16:44:54,853 - twister - DEBUG -      exclude_tag: None
+2026-10-09 16:44:54,853 - twister - DEBUG - Checking platform filter: ['stm32f4_disco']
+2026-10-09 16:44:54,853 - twister - INFO - Building initial testsuite list...
+2026-10-09 16:44:54,853 - twister - INFO - Built testsuite list in 0.00 seconds
+2026-10-09 16:44:54,853 - twister - INFO - Writing JSON report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/testplan.json
+2026-10-09 16:44:54,867 - twister - INFO - JOBS: 16
+2026-10-09 16:44:54,868 - twister - INFO - Adding tasks to the queue...
+2026-10-09 16:44:54,868 - twister - INFO - Added initial list of jobs to queue
+2026-10-09 16:44:54,894 - twister - DEBUG - Launched 16 jobs
+2026-10-09 16:44:54,899 - twister - INFO - 1 test scenarios (1 configurations) selected, 1 configurations filtered (1 by static filter, 0 at runtime).
+2026-10-09 16:44:54,903 - twister - INFO - [32m0 of 0[39m executed test configurations passed (0.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 1.62 seconds.
+2026-10-09 16:44:54,904 - twister - INFO - 0 of 0 executed test cases passed (0.00%) on 0 out of total 1708 platforms (0.00%).
+2026-10-09 16:44:54,904 - twister - INFO - [32m0[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-10-09 16:44:54,904 - twister - INFO - Saving reports...
+2026-10-09 16:44:54,904 - twister - INFO - Writing JSON report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/twister.json
+2026-10-09 16:44:54,904 - twister - INFO - Writing xunit report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/twister.xml...
+2026-10-09 16:44:54,905 - twister - INFO - Writing xunit report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/twister_report.xml...
+2026-10-09 16:44:54,906 - twister - INFO - Run completed

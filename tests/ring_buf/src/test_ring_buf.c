@@ -47,7 +47,11 @@ ZTEST(ring_buf_init, test_reinit_clears_state)
 	 * verify the buffer is empty and count is 0.
 	 * See TEST_SPEC.md "Suite ring_buf_init" #2.
 	 */
-	ztest_test_skip();
+	zassert_ok(rb_push(99), "Queue must not overflow");
+	rb_init(4);
+	zassert_true(rb_is_empty(), "Verifying if the buffer is empty");
+	zassert_equal(rb_count(), 0, "Verifying if the count is 0");
+	//ztest_test_skip();
 }
 
 /*
@@ -64,7 +68,15 @@ ZTEST(ring_buf_push_pop, test_single_push_pop)
 	/* TODO(l8-task1): rb_push(42), rb_pop(&v) -> v == 42, buffer empty after.
 	 * See TEST_SPEC.md "Suite ring_buf_push_pop" #1.
 	 */
-	ztest_test_skip();
+
+	int v = 0;
+
+	zassert_ok(rb_push(42), "Queue must not overflow");
+	zassert_ok(rb_pop(&v), "Pop should succeed");
+	zassert_equal(v, 42, "Verifying is the top of the queue equal to 42");
+	zassert_true(rb_is_empty(), "Queue should be empty after pop");
+	zassert_equal(rb_count(), 0, "Verifying if the count is 0");
+	//ztest_test_skip();
 }
 
 ZTEST(ring_buf_push_pop, test_fifo_order)
@@ -73,7 +85,18 @@ ZTEST(ring_buf_push_pop, test_fifo_order)
 	 * and verify the values come out as 1, 2, 3 in that order.
 	 * See TEST_SPEC.md "Suite ring_buf_push_pop" #2.
 	 */
-	ztest_test_skip();
+	int v = 0;
+
+	zassert_ok(rb_push(1), "Queue must not overflow");
+	zassert_ok(rb_push(3), "Queue must not overflow");
+	zassert_ok(rb_push(2), "Queue must not overflow");
+	zassert_ok(rb_pop(&v), "First pop should succeed");
+	zassert_equal(v, 1, "Is this value 1?");
+	zassert_ok(rb_pop(&v), "Second pop should succeed");
+	zassert_equal(v, 2, "Is this value 2?");
+	zassert_ok(rb_pop(&v), "Third pop should succeed");
+	zassert_equal(v, 3, "Is this value 3?");
+	//ztest_test_skip();
 }
 
 ZTEST(ring_buf_push_pop, test_push_full_returns_enospc)
@@ -82,7 +105,14 @@ ZTEST(ring_buf_push_pop, test_push_full_returns_enospc)
 	 * one more value -> -ENOSPC.
 	 * See TEST_SPEC.md "Suite ring_buf_push_pop" #3.
 	 */
-	ztest_test_skip();
+	zassert_ok(rb_push(1), "Queue must not overflow");
+	zassert_ok(rb_push(2), "Queue must not overflow");
+	zassert_ok(rb_push(3), "Queue must not overflow");
+	zassert_ok(rb_push(4), "Queue must not overflow");
+	zassert_true(rb_is_full(), "Queue should be full?");
+	zassert_equal(rb_count(), 4, "Is count four?");
+	zassert_equal(rb_push(99), -ENOSPC, "Queue overflow!");
+	//ztest_test_skip();
 }
 
 /*
@@ -99,8 +129,15 @@ ZTEST(ring_buf_boundaries, test_peek_does_not_consume)
 	/* TODO(l8-task1): rb_push(7); rb_peek(&v) -> v == 7; rb_peek(&v) again
 	 * -> v == 7; rb_count() still == 1.
 	 * See TEST_SPEC.md "Suite ring_buf_boundaries" #1.
-	 */
-	ztest_test_skip();
+	 */	
+	int v;
+	zassert_ok(rb_push(7), "Queue must not overflow");
+	zassert_ok(rb_peek(&v), "First peek should succeed");
+	zassert_equal(rb_peek(&v), 7, "Must be equal to 7");
+	zassert_ok(rb_peek(&v), "Second peek should succeed");
+	zassert_equal(rb_peek(&v), 7, "Still must be equal to 7");
+	zassert_equal(rb_count(), 1, "Only one item should have ben pushed until now");
+	//ztest_test_skip();
 }
 
 ZTEST(ring_buf_boundaries, test_pop_null_returns_einval)
@@ -108,7 +145,8 @@ ZTEST(ring_buf_boundaries, test_pop_null_returns_einval)
 	/* TODO(l8-task1): rb_pop(NULL) -> -EINVAL.
 	 * See TEST_SPEC.md "Suite ring_buf_boundaries" #2.
 	 */
-	ztest_test_skip();
+	zassert_equal(rb_pop(NULL), -EINVAL, "NULL result pointer should return -EINVAL");
+	//ztest_test_skip();
 }
 
 ZTEST(ring_buf_boundaries, test_is_full_after_fill)
@@ -116,5 +154,11 @@ ZTEST(ring_buf_boundaries, test_is_full_after_fill)
 	/* TODO(l8-task1): push 4 values -> rb_is_full() == true, rb_count() == 4.
 	 * See TEST_SPEC.md "Suite ring_buf_boundaries" #3.
 	 */
-	ztest_test_skip();
+	zassert_ok(rb_push(4), "Queue must not overflow");
+	zassert_ok(rb_push(3), "Queue must not overflow");
+	zassert_ok(rb_push(2), "Queue must not overflow");
+	zassert_ok(rb_push(1), "Queue must not overflow");
+	zassert_true(rb_is_full(), "Queue is full");
+	zassert_equal(rb_count(), 4, "There should be 4 items in the queue");
+	//ztest_test_skip();
 }

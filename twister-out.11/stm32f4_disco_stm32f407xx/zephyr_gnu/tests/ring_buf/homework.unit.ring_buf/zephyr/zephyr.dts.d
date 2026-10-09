@@ -1,0 +1,37 @@
+empty_file.o: \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/misc/empty_file.c \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/arm/st/f4/stm32f407Xg.dtsi \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/arm/st/f4/stm32f407.dtsi \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/arm/st/f4/stm32f405.dtsi \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/arm/st/f4/stm32f401.dtsi \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/arm/st/f4/stm32f4.dtsi \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/arm/armv7-m.dtsi \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/common/skeleton.dtsi \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/adc/adc.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/dt-util.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_macro.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_internal.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_loops.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_listify.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_internal_is_eq.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_internal_util_inc.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_internal_util_dec.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_internal_util_x2.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/clock/stm32f4_clock.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/clock/stm32_common_clocks.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/pwm/stm32_pwm.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/dma/stm32_dma.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/reset/stm32f2_4_7_reset.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/reset/stm32-common.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/sensor/qdec_stm32.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/power/stm32_pwr.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/common/freq.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/common/mem.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/dts/st/f4/stm32f407v(e-g)tx-pinctrl.dtsi \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl-common.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h

@@ -1,0 +1,943 @@
+<testsuites>
+	<testsuite name="stm32f4_disco/stm32f407xx" timestamp="2026-10-09T16:47:43.064214" time="0.0" tests="8" failures="8" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="v4.4.0-13939-g2f0bc11264a8" />
+		</properties>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_init.fresh_state" time="0.00">
+			<failure type="failure" message="Build failure">Loading Zephyr default modules (Zephyr base).
+-- Application: /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+-- CMake version: 4.4.3
+-- Found Python3: /home/sweekar/Projects/zephyr-demo/.venv/bin/python3 (found suitable version "3.14.7", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: /home/sweekar/.cache/zephyr
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: stm32f4_disco, qualifiers: stm32f407xx
+-- Found host-tools: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found Dtc: /home/sweekar/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.7.0", minimum required is "1.4.6")
+-- Found BOARD.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts
+-- Generated zephyr.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.dts
+-- Generated pickled edt: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/Kconfig
+Loaded configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+Configuration saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/.config'
+Kconfig header saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h'
+-- Could NOT find Ccache (missing: CCACHE) (Required is at least version "4.12")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found GnuLd: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.43.1")
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+CMake Warning at /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/random/CMakeLists.txt:12 (message):
+
+
+      Warning: CONFIG_TIMER_RANDOM_GENERATOR and CONFIG_TEST_CSPRNG_GENERATOR are
+      not truly random generators. This capability is not secure and it is
+      provided for testing purposes only. Use it carefully.
+
+
+-- Found gen_kobject_list: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (9.6s)
+-- Generating done (0.2s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    TC_NAME
+
+
+-- Build files have been written to: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf
+ninja: warning: Ignoring jobserver: Pipe-based protocol is not supported! [ -j16 --jobserver-auth=7,8]
+[1/169] Preparing syscall dependency handling
+
+[2/169] Generating misc/generated/syscalls_subdirs.trigger
+[3/169] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr), build: v4.4.0-13939-g2f0bc11264a8
+[4/169] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[5/169] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+[6/169] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+[7/169] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[8/169] Generating include/generated/zephyr/driver-validation.h
+[9/169] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj
+[10/169] Generating ../../include/generated/zephyr/heap_constants.h
+[11/169] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[12/169] Generating include/generated/zephyr/offsets.h
+[13/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/set.c.obj
+[14/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[15/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[16/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitmask.c.obj
+[17/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/last_section_id.c.obj
+[18/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+[19/169] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+[20/169] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+[21/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[22/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/boot_banner.c.obj
+[23/169] Building C object CMakeFiles/app.dir/src/test_ring_buf.c.obj
+FAILED: [code=1] CMakeFiles/app.dir/src/test_ring_buf.c.obj 
+/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCORE_CM4 -DHSE_VALUE=8000000 -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DSTM32F407xx -DTC_RUNID=339e216fc3f346736d905ed5856e79e5 -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/../../app/modules/ring_buf/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/picolibc/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/common/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/drivers -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/stm32f4x/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/portability/posix/c_lib_ext/getopt -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/coverage -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/modules/cmsis_6/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/soc -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/common_ll/include -isystem /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/common/include -fno-strict-aliasing -Werror -Os -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c17 -MD -MT CMakeFiles/app.dir/src/test_ring_buf.c.obj -MF CMakeFiles/app.dir/src/test_ring_buf.c.obj.d -o CMakeFiles/app.dir/src/test_ring_buf.c.obj -c /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function 'ring_buf_init_test_reinit_clears_state':
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:51:19: error: expected ';' before 'do'
+   51 |         rb_init(4)
+      |                   ^
+      |                   ;
+In file included from /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest.h:42,
+                 from /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:12:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:23: error: implicit declaration of function 'rb_cout'; did you mean 'rb_count'? [-Wimplicit-function-declaration]
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |                       ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:183:35: note: in definition of macro '_zassert_base'
+  183 |                         z_zassert(cond, _msg ? ("(" default_msg ")") : (default_msg), __FILE__,    \
+      |                                   ^~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:196:9: note: in expansion of macro '_zassert_va'
+  196 |         _zassert_va(cond, default_msg, COND_CODE_1(__VA_OPT__(1), (__VA_ARGS__), (NULL)))
+      |         ^~~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:321:34: note: in expansion of macro 'zassert'
+  321 | #define zassert_equal(a, b, ...) zassert((a) == (b), #a " not equal to " #b, ##__VA_ARGS__)
+      |                                  ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:9: note: in expansion of macro 'zassert_equal'
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |         ^~~~~~~~~~~~~
+[24/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[25/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[26/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/ring_buffer.c.obj
+[27/169] Building C object CMakeFiles/app.dir/home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf/src/ring_buf.c.obj
+[28/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt_common.c.obj
+[29/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt.c.obj
+[30/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32cube_hal.c.obj
+[31/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[32/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[33/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/stm32f4x/soc.c.obj
+[34/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/soc_config.c.obj
+[35/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+[36/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32_backup_domain.c.obj
+[37/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[38/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+[39/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[40/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/gpioport_mgr.c.obj
+ninja: build stopped: subcommand failed.
+</failure>
+		</testcase>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_init.reinit_clears_state" time="0.00">
+			<failure type="failure" message="Build failure">Loading Zephyr default modules (Zephyr base).
+-- Application: /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+-- CMake version: 4.4.3
+-- Found Python3: /home/sweekar/Projects/zephyr-demo/.venv/bin/python3 (found suitable version "3.14.7", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: /home/sweekar/.cache/zephyr
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: stm32f4_disco, qualifiers: stm32f407xx
+-- Found host-tools: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found Dtc: /home/sweekar/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.7.0", minimum required is "1.4.6")
+-- Found BOARD.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts
+-- Generated zephyr.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.dts
+-- Generated pickled edt: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/Kconfig
+Loaded configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+Configuration saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/.config'
+Kconfig header saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h'
+-- Could NOT find Ccache (missing: CCACHE) (Required is at least version "4.12")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found GnuLd: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.43.1")
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+CMake Warning at /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/random/CMakeLists.txt:12 (message):
+
+
+      Warning: CONFIG_TIMER_RANDOM_GENERATOR and CONFIG_TEST_CSPRNG_GENERATOR are
+      not truly random generators. This capability is not secure and it is
+      provided for testing purposes only. Use it carefully.
+
+
+-- Found gen_kobject_list: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (9.6s)
+-- Generating done (0.2s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    TC_NAME
+
+
+-- Build files have been written to: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf
+ninja: warning: Ignoring jobserver: Pipe-based protocol is not supported! [ -j16 --jobserver-auth=7,8]
+[1/169] Preparing syscall dependency handling
+
+[2/169] Generating misc/generated/syscalls_subdirs.trigger
+[3/169] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr), build: v4.4.0-13939-g2f0bc11264a8
+[4/169] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[5/169] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+[6/169] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+[7/169] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[8/169] Generating include/generated/zephyr/driver-validation.h
+[9/169] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj
+[10/169] Generating ../../include/generated/zephyr/heap_constants.h
+[11/169] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[12/169] Generating include/generated/zephyr/offsets.h
+[13/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/set.c.obj
+[14/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[15/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[16/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitmask.c.obj
+[17/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/last_section_id.c.obj
+[18/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+[19/169] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+[20/169] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+[21/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[22/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/boot_banner.c.obj
+[23/169] Building C object CMakeFiles/app.dir/src/test_ring_buf.c.obj
+FAILED: [code=1] CMakeFiles/app.dir/src/test_ring_buf.c.obj 
+/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCORE_CM4 -DHSE_VALUE=8000000 -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DSTM32F407xx -DTC_RUNID=339e216fc3f346736d905ed5856e79e5 -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/../../app/modules/ring_buf/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/picolibc/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/common/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/drivers -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/stm32f4x/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/portability/posix/c_lib_ext/getopt -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/coverage -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/modules/cmsis_6/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/soc -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/common_ll/include -isystem /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/common/include -fno-strict-aliasing -Werror -Os -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c17 -MD -MT CMakeFiles/app.dir/src/test_ring_buf.c.obj -MF CMakeFiles/app.dir/src/test_ring_buf.c.obj.d -o CMakeFiles/app.dir/src/test_ring_buf.c.obj -c /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function 'ring_buf_init_test_reinit_clears_state':
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:51:19: error: expected ';' before 'do'
+   51 |         rb_init(4)
+      |                   ^
+      |                   ;
+In file included from /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest.h:42,
+                 from /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:12:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:23: error: implicit declaration of function 'rb_cout'; did you mean 'rb_count'? [-Wimplicit-function-declaration]
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |                       ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:183:35: note: in definition of macro '_zassert_base'
+  183 |                         z_zassert(cond, _msg ? ("(" default_msg ")") : (default_msg), __FILE__,    \
+      |                                   ^~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:196:9: note: in expansion of macro '_zassert_va'
+  196 |         _zassert_va(cond, default_msg, COND_CODE_1(__VA_OPT__(1), (__VA_ARGS__), (NULL)))
+      |         ^~~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:321:34: note: in expansion of macro 'zassert'
+  321 | #define zassert_equal(a, b, ...) zassert((a) == (b), #a " not equal to " #b, ##__VA_ARGS__)
+      |                                  ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:9: note: in expansion of macro 'zassert_equal'
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |         ^~~~~~~~~~~~~
+[24/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[25/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[26/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/ring_buffer.c.obj
+[27/169] Building C object CMakeFiles/app.dir/home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf/src/ring_buf.c.obj
+[28/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt_common.c.obj
+[29/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt.c.obj
+[30/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32cube_hal.c.obj
+[31/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[32/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[33/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/stm32f4x/soc.c.obj
+[34/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/soc_config.c.obj
+[35/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+[36/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32_backup_domain.c.obj
+[37/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[38/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+[39/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[40/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/gpioport_mgr.c.obj
+ninja: build stopped: subcommand failed.
+</failure>
+		</testcase>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume" time="0.00">
+			<failure type="failure" message="Build failure">Loading Zephyr default modules (Zephyr base).
+-- Application: /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+-- CMake version: 4.4.3
+-- Found Python3: /home/sweekar/Projects/zephyr-demo/.venv/bin/python3 (found suitable version "3.14.7", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: /home/sweekar/.cache/zephyr
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: stm32f4_disco, qualifiers: stm32f407xx
+-- Found host-tools: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found Dtc: /home/sweekar/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.7.0", minimum required is "1.4.6")
+-- Found BOARD.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts
+-- Generated zephyr.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.dts
+-- Generated pickled edt: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/Kconfig
+Loaded configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+Configuration saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/.config'
+Kconfig header saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h'
+-- Could NOT find Ccache (missing: CCACHE) (Required is at least version "4.12")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found GnuLd: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.43.1")
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+CMake Warning at /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/random/CMakeLists.txt:12 (message):
+
+
+      Warning: CONFIG_TIMER_RANDOM_GENERATOR and CONFIG_TEST_CSPRNG_GENERATOR are
+      not truly random generators. This capability is not secure and it is
+      provided for testing purposes only. Use it carefully.
+
+
+-- Found gen_kobject_list: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (9.6s)
+-- Generating done (0.2s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    TC_NAME
+
+
+-- Build files have been written to: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf
+ninja: warning: Ignoring jobserver: Pipe-based protocol is not supported! [ -j16 --jobserver-auth=7,8]
+[1/169] Preparing syscall dependency handling
+
+[2/169] Generating misc/generated/syscalls_subdirs.trigger
+[3/169] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr), build: v4.4.0-13939-g2f0bc11264a8
+[4/169] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[5/169] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+[6/169] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+[7/169] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[8/169] Generating include/generated/zephyr/driver-validation.h
+[9/169] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj
+[10/169] Generating ../../include/generated/zephyr/heap_constants.h
+[11/169] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[12/169] Generating include/generated/zephyr/offsets.h
+[13/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/set.c.obj
+[14/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[15/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[16/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitmask.c.obj
+[17/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/last_section_id.c.obj
+[18/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+[19/169] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+[20/169] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+[21/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[22/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/boot_banner.c.obj
+[23/169] Building C object CMakeFiles/app.dir/src/test_ring_buf.c.obj
+FAILED: [code=1] CMakeFiles/app.dir/src/test_ring_buf.c.obj 
+/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCORE_CM4 -DHSE_VALUE=8000000 -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DSTM32F407xx -DTC_RUNID=339e216fc3f346736d905ed5856e79e5 -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/../../app/modules/ring_buf/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/picolibc/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/common/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/drivers -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/stm32f4x/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/portability/posix/c_lib_ext/getopt -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/coverage -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/modules/cmsis_6/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/soc -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/common_ll/include -isystem /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/common/include -fno-strict-aliasing -Werror -Os -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c17 -MD -MT CMakeFiles/app.dir/src/test_ring_buf.c.obj -MF CMakeFiles/app.dir/src/test_ring_buf.c.obj.d -o CMakeFiles/app.dir/src/test_ring_buf.c.obj -c /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function 'ring_buf_init_test_reinit_clears_state':
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:51:19: error: expected ';' before 'do'
+   51 |         rb_init(4)
+      |                   ^
+      |                   ;
+In file included from /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest.h:42,
+                 from /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:12:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:23: error: implicit declaration of function 'rb_cout'; did you mean 'rb_count'? [-Wimplicit-function-declaration]
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |                       ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:183:35: note: in definition of macro '_zassert_base'
+  183 |                         z_zassert(cond, _msg ? ("(" default_msg ")") : (default_msg), __FILE__,    \
+      |                                   ^~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:196:9: note: in expansion of macro '_zassert_va'
+  196 |         _zassert_va(cond, default_msg, COND_CODE_1(__VA_OPT__(1), (__VA_ARGS__), (NULL)))
+      |         ^~~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:321:34: note: in expansion of macro 'zassert'
+  321 | #define zassert_equal(a, b, ...) zassert((a) == (b), #a " not equal to " #b, ##__VA_ARGS__)
+      |                                  ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:9: note: in expansion of macro 'zassert_equal'
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |         ^~~~~~~~~~~~~
+[24/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[25/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[26/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/ring_buffer.c.obj
+[27/169] Building C object CMakeFiles/app.dir/home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf/src/ring_buf.c.obj
+[28/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt_common.c.obj
+[29/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt.c.obj
+[30/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32cube_hal.c.obj
+[31/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[32/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[33/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/stm32f4x/soc.c.obj
+[34/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/soc_config.c.obj
+[35/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+[36/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32_backup_domain.c.obj
+[37/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[38/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+[39/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[40/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/gpioport_mgr.c.obj
+ninja: build stopped: subcommand failed.
+</failure>
+		</testcase>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_push_pop.single_push_pop" time="0.00">
+			<failure type="failure" message="Build failure">Loading Zephyr default modules (Zephyr base).
+-- Application: /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+-- CMake version: 4.4.3
+-- Found Python3: /home/sweekar/Projects/zephyr-demo/.venv/bin/python3 (found suitable version "3.14.7", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: /home/sweekar/.cache/zephyr
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: stm32f4_disco, qualifiers: stm32f407xx
+-- Found host-tools: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found Dtc: /home/sweekar/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.7.0", minimum required is "1.4.6")
+-- Found BOARD.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts
+-- Generated zephyr.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.dts
+-- Generated pickled edt: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/Kconfig
+Loaded configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+Configuration saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/.config'
+Kconfig header saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h'
+-- Could NOT find Ccache (missing: CCACHE) (Required is at least version "4.12")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found GnuLd: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.43.1")
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+CMake Warning at /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/random/CMakeLists.txt:12 (message):
+
+
+      Warning: CONFIG_TIMER_RANDOM_GENERATOR and CONFIG_TEST_CSPRNG_GENERATOR are
+      not truly random generators. This capability is not secure and it is
+      provided for testing purposes only. Use it carefully.
+
+
+-- Found gen_kobject_list: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (9.6s)
+-- Generating done (0.2s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    TC_NAME
+
+
+-- Build files have been written to: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf
+ninja: warning: Ignoring jobserver: Pipe-based protocol is not supported! [ -j16 --jobserver-auth=7,8]
+[1/169] Preparing syscall dependency handling
+
+[2/169] Generating misc/generated/syscalls_subdirs.trigger
+[3/169] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr), build: v4.4.0-13939-g2f0bc11264a8
+[4/169] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[5/169] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+[6/169] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+[7/169] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[8/169] Generating include/generated/zephyr/driver-validation.h
+[9/169] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj
+[10/169] Generating ../../include/generated/zephyr/heap_constants.h
+[11/169] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[12/169] Generating include/generated/zephyr/offsets.h
+[13/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/set.c.obj
+[14/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[15/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[16/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitmask.c.obj
+[17/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/last_section_id.c.obj
+[18/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+[19/169] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+[20/169] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+[21/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[22/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/boot_banner.c.obj
+[23/169] Building C object CMakeFiles/app.dir/src/test_ring_buf.c.obj
+FAILED: [code=1] CMakeFiles/app.dir/src/test_ring_buf.c.obj 
+/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCORE_CM4 -DHSE_VALUE=8000000 -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DSTM32F407xx -DTC_RUNID=339e216fc3f346736d905ed5856e79e5 -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/../../app/modules/ring_buf/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/picolibc/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/common/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/drivers -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/stm32f4x/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/portability/posix/c_lib_ext/getopt -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/coverage -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/modules/cmsis_6/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/soc -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/common_ll/include -isystem /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/common/include -fno-strict-aliasing -Werror -Os -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c17 -MD -MT CMakeFiles/app.dir/src/test_ring_buf.c.obj -MF CMakeFiles/app.dir/src/test_ring_buf.c.obj.d -o CMakeFiles/app.dir/src/test_ring_buf.c.obj -c /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function 'ring_buf_init_test_reinit_clears_state':
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:51:19: error: expected ';' before 'do'
+   51 |         rb_init(4)
+      |                   ^
+      |                   ;
+In file included from /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest.h:42,
+                 from /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:12:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:23: error: implicit declaration of function 'rb_cout'; did you mean 'rb_count'? [-Wimplicit-function-declaration]
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |                       ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:183:35: note: in definition of macro '_zassert_base'
+  183 |                         z_zassert(cond, _msg ? ("(" default_msg ")") : (default_msg), __FILE__,    \
+      |                                   ^~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:196:9: note: in expansion of macro '_zassert_va'
+  196 |         _zassert_va(cond, default_msg, COND_CODE_1(__VA_OPT__(1), (__VA_ARGS__), (NULL)))
+      |         ^~~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:321:34: note: in expansion of macro 'zassert'
+  321 | #define zassert_equal(a, b, ...) zassert((a) == (b), #a " not equal to " #b, ##__VA_ARGS__)
+      |                                  ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:9: note: in expansion of macro 'zassert_equal'
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |         ^~~~~~~~~~~~~
+[24/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[25/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[26/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/ring_buffer.c.obj
+[27/169] Building C object CMakeFiles/app.dir/home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf/src/ring_buf.c.obj
+[28/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt_common.c.obj
+[29/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt.c.obj
+[30/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32cube_hal.c.obj
+[31/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[32/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[33/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/stm32f4x/soc.c.obj
+[34/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/soc_config.c.obj
+[35/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+[36/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32_backup_domain.c.obj
+[37/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[38/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+[39/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[40/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/gpioport_mgr.c.obj
+ninja: build stopped: subcommand failed.
+</failure>
+		</testcase>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc" time="0.00">
+			<failure type="failure" message="Build failure">Loading Zephyr default modules (Zephyr base).
+-- Application: /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+-- CMake version: 4.4.3
+-- Found Python3: /home/sweekar/Projects/zephyr-demo/.venv/bin/python3 (found suitable version "3.14.7", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: /home/sweekar/.cache/zephyr
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: stm32f4_disco, qualifiers: stm32f407xx
+-- Found host-tools: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found Dtc: /home/sweekar/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.7.0", minimum required is "1.4.6")
+-- Found BOARD.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts
+-- Generated zephyr.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.dts
+-- Generated pickled edt: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/Kconfig
+Loaded configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+Configuration saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/.config'
+Kconfig header saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h'
+-- Could NOT find Ccache (missing: CCACHE) (Required is at least version "4.12")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found GnuLd: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.43.1")
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+CMake Warning at /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/random/CMakeLists.txt:12 (message):
+
+
+      Warning: CONFIG_TIMER_RANDOM_GENERATOR and CONFIG_TEST_CSPRNG_GENERATOR are
+      not truly random generators. This capability is not secure and it is
+      provided for testing purposes only. Use it carefully.
+
+
+-- Found gen_kobject_list: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (9.6s)
+-- Generating done (0.2s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    TC_NAME
+
+
+-- Build files have been written to: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf
+ninja: warning: Ignoring jobserver: Pipe-based protocol is not supported! [ -j16 --jobserver-auth=7,8]
+[1/169] Preparing syscall dependency handling
+
+[2/169] Generating misc/generated/syscalls_subdirs.trigger
+[3/169] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr), build: v4.4.0-13939-g2f0bc11264a8
+[4/169] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[5/169] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+[6/169] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+[7/169] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[8/169] Generating include/generated/zephyr/driver-validation.h
+[9/169] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj
+[10/169] Generating ../../include/generated/zephyr/heap_constants.h
+[11/169] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[12/169] Generating include/generated/zephyr/offsets.h
+[13/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/set.c.obj
+[14/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[15/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[16/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitmask.c.obj
+[17/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/last_section_id.c.obj
+[18/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+[19/169] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+[20/169] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+[21/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[22/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/boot_banner.c.obj
+[23/169] Building C object CMakeFiles/app.dir/src/test_ring_buf.c.obj
+FAILED: [code=1] CMakeFiles/app.dir/src/test_ring_buf.c.obj 
+/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCORE_CM4 -DHSE_VALUE=8000000 -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DSTM32F407xx -DTC_RUNID=339e216fc3f346736d905ed5856e79e5 -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/../../app/modules/ring_buf/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/picolibc/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/common/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/drivers -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/stm32f4x/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/portability/posix/c_lib_ext/getopt -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/coverage -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/modules/cmsis_6/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/soc -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/common_ll/include -isystem /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/common/include -fno-strict-aliasing -Werror -Os -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c17 -MD -MT CMakeFiles/app.dir/src/test_ring_buf.c.obj -MF CMakeFiles/app.dir/src/test_ring_buf.c.obj.d -o CMakeFiles/app.dir/src/test_ring_buf.c.obj -c /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function 'ring_buf_init_test_reinit_clears_state':
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:51:19: error: expected ';' before 'do'
+   51 |         rb_init(4)
+      |                   ^
+      |                   ;
+In file included from /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest.h:42,
+                 from /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:12:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:23: error: implicit declaration of function 'rb_cout'; did you mean 'rb_count'? [-Wimplicit-function-declaration]
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |                       ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:183:35: note: in definition of macro '_zassert_base'
+  183 |                         z_zassert(cond, _msg ? ("(" default_msg ")") : (default_msg), __FILE__,    \
+      |                                   ^~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:196:9: note: in expansion of macro '_zassert_va'
+  196 |         _zassert_va(cond, default_msg, COND_CODE_1(__VA_OPT__(1), (__VA_ARGS__), (NULL)))
+      |         ^~~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:321:34: note: in expansion of macro 'zassert'
+  321 | #define zassert_equal(a, b, ...) zassert((a) == (b), #a " not equal to " #b, ##__VA_ARGS__)
+      |                                  ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:9: note: in expansion of macro 'zassert_equal'
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |         ^~~~~~~~~~~~~
+[24/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[25/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[26/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/ring_buffer.c.obj
+[27/169] Building C object CMakeFiles/app.dir/home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf/src/ring_buf.c.obj
+[28/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt_common.c.obj
+[29/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt.c.obj
+[30/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32cube_hal.c.obj
+[31/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[32/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[33/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/stm32f4x/soc.c.obj
+[34/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/soc_config.c.obj
+[35/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+[36/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32_backup_domain.c.obj
+[37/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[38/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+[39/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[40/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/gpioport_mgr.c.obj
+ninja: build stopped: subcommand failed.
+</failure>
+		</testcase>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill" time="0.00">
+			<failure type="failure" message="Build failure">Loading Zephyr default modules (Zephyr base).
+-- Application: /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+-- CMake version: 4.4.3
+-- Found Python3: /home/sweekar/Projects/zephyr-demo/.venv/bin/python3 (found suitable version "3.14.7", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: /home/sweekar/.cache/zephyr
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: stm32f4_disco, qualifiers: stm32f407xx
+-- Found host-tools: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found Dtc: /home/sweekar/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.7.0", minimum required is "1.4.6")
+-- Found BOARD.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts
+-- Generated zephyr.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.dts
+-- Generated pickled edt: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/Kconfig
+Loaded configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+Configuration saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/.config'
+Kconfig header saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h'
+-- Could NOT find Ccache (missing: CCACHE) (Required is at least version "4.12")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found GnuLd: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.43.1")
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+CMake Warning at /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/random/CMakeLists.txt:12 (message):
+
+
+      Warning: CONFIG_TIMER_RANDOM_GENERATOR and CONFIG_TEST_CSPRNG_GENERATOR are
+      not truly random generators. This capability is not secure and it is
+      provided for testing purposes only. Use it carefully.
+
+
+-- Found gen_kobject_list: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (9.6s)
+-- Generating done (0.2s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    TC_NAME
+
+
+-- Build files have been written to: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf
+ninja: warning: Ignoring jobserver: Pipe-based protocol is not supported! [ -j16 --jobserver-auth=7,8]
+[1/169] Preparing syscall dependency handling
+
+[2/169] Generating misc/generated/syscalls_subdirs.trigger
+[3/169] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr), build: v4.4.0-13939-g2f0bc11264a8
+[4/169] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[5/169] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+[6/169] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+[7/169] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[8/169] Generating include/generated/zephyr/driver-validation.h
+[9/169] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj
+[10/169] Generating ../../include/generated/zephyr/heap_constants.h
+[11/169] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[12/169] Generating include/generated/zephyr/offsets.h
+[13/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/set.c.obj
+[14/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[15/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[16/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitmask.c.obj
+[17/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/last_section_id.c.obj
+[18/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+[19/169] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+[20/169] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+[21/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[22/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/boot_banner.c.obj
+[23/169] Building C object CMakeFiles/app.dir/src/test_ring_buf.c.obj
+FAILED: [code=1] CMakeFiles/app.dir/src/test_ring_buf.c.obj 
+/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCORE_CM4 -DHSE_VALUE=8000000 -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DSTM32F407xx -DTC_RUNID=339e216fc3f346736d905ed5856e79e5 -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/../../app/modules/ring_buf/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/picolibc/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/common/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/drivers -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/stm32f4x/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/portability/posix/c_lib_ext/getopt -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/coverage -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/modules/cmsis_6/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/soc -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/common_ll/include -isystem /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/common/include -fno-strict-aliasing -Werror -Os -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c17 -MD -MT CMakeFiles/app.dir/src/test_ring_buf.c.obj -MF CMakeFiles/app.dir/src/test_ring_buf.c.obj.d -o CMakeFiles/app.dir/src/test_ring_buf.c.obj -c /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function 'ring_buf_init_test_reinit_clears_state':
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:51:19: error: expected ';' before 'do'
+   51 |         rb_init(4)
+      |                   ^
+      |                   ;
+In file included from /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest.h:42,
+                 from /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:12:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:23: error: implicit declaration of function 'rb_cout'; did you mean 'rb_count'? [-Wimplicit-function-declaration]
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |                       ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:183:35: note: in definition of macro '_zassert_base'
+  183 |                         z_zassert(cond, _msg ? ("(" default_msg ")") : (default_msg), __FILE__,    \
+      |                                   ^~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:196:9: note: in expansion of macro '_zassert_va'
+  196 |         _zassert_va(cond, default_msg, COND_CODE_1(__VA_OPT__(1), (__VA_ARGS__), (NULL)))
+      |         ^~~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:321:34: note: in expansion of macro 'zassert'
+  321 | #define zassert_equal(a, b, ...) zassert((a) == (b), #a " not equal to " #b, ##__VA_ARGS__)
+      |                                  ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:9: note: in expansion of macro 'zassert_equal'
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |         ^~~~~~~~~~~~~
+[24/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[25/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[26/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/ring_buffer.c.obj
+[27/169] Building C object CMakeFiles/app.dir/home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf/src/ring_buf.c.obj
+[28/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt_common.c.obj
+[29/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt.c.obj
+[30/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32cube_hal.c.obj
+[31/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[32/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[33/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/stm32f4x/soc.c.obj
+[34/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/soc_config.c.obj
+[35/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+[36/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32_backup_domain.c.obj
+[37/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[38/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+[39/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[40/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/gpioport_mgr.c.obj
+ninja: build stopped: subcommand failed.
+</failure>
+		</testcase>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_push_pop.fifo_order" time="0.00">
+			<failure type="failure" message="Build failure">Loading Zephyr default modules (Zephyr base).
+-- Application: /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+-- CMake version: 4.4.3
+-- Found Python3: /home/sweekar/Projects/zephyr-demo/.venv/bin/python3 (found suitable version "3.14.7", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: /home/sweekar/.cache/zephyr
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: stm32f4_disco, qualifiers: stm32f407xx
+-- Found host-tools: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found Dtc: /home/sweekar/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.7.0", minimum required is "1.4.6")
+-- Found BOARD.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts
+-- Generated zephyr.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.dts
+-- Generated pickled edt: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/Kconfig
+Loaded configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+Configuration saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/.config'
+Kconfig header saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h'
+-- Could NOT find Ccache (missing: CCACHE) (Required is at least version "4.12")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found GnuLd: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.43.1")
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+CMake Warning at /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/random/CMakeLists.txt:12 (message):
+
+
+      Warning: CONFIG_TIMER_RANDOM_GENERATOR and CONFIG_TEST_CSPRNG_GENERATOR are
+      not truly random generators. This capability is not secure and it is
+      provided for testing purposes only. Use it carefully.
+
+
+-- Found gen_kobject_list: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (9.6s)
+-- Generating done (0.2s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    TC_NAME
+
+
+-- Build files have been written to: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf
+ninja: warning: Ignoring jobserver: Pipe-based protocol is not supported! [ -j16 --jobserver-auth=7,8]
+[1/169] Preparing syscall dependency handling
+
+[2/169] Generating misc/generated/syscalls_subdirs.trigger
+[3/169] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr), build: v4.4.0-13939-g2f0bc11264a8
+[4/169] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[5/169] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+[6/169] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+[7/169] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[8/169] Generating include/generated/zephyr/driver-validation.h
+[9/169] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj
+[10/169] Generating ../../include/generated/zephyr/heap_constants.h
+[11/169] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[12/169] Generating include/generated/zephyr/offsets.h
+[13/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/set.c.obj
+[14/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[15/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[16/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitmask.c.obj
+[17/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/last_section_id.c.obj
+[18/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+[19/169] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+[20/169] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+[21/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[22/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/boot_banner.c.obj
+[23/169] Building C object CMakeFiles/app.dir/src/test_ring_buf.c.obj
+FAILED: [code=1] CMakeFiles/app.dir/src/test_ring_buf.c.obj 
+/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCORE_CM4 -DHSE_VALUE=8000000 -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DSTM32F407xx -DTC_RUNID=339e216fc3f346736d905ed5856e79e5 -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/../../app/modules/ring_buf/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/picolibc/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/common/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/drivers -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/stm32f4x/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/portability/posix/c_lib_ext/getopt -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/coverage -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/modules/cmsis_6/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/soc -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/common_ll/include -isystem /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/common/include -fno-strict-aliasing -Werror -Os -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c17 -MD -MT CMakeFiles/app.dir/src/test_ring_buf.c.obj -MF CMakeFiles/app.dir/src/test_ring_buf.c.obj.d -o CMakeFiles/app.dir/src/test_ring_buf.c.obj -c /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function 'ring_buf_init_test_reinit_clears_state':
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:51:19: error: expected ';' before 'do'
+   51 |         rb_init(4)
+      |                   ^
+      |                   ;
+In file included from /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest.h:42,
+                 from /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:12:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:23: error: implicit declaration of function 'rb_cout'; did you mean 'rb_count'? [-Wimplicit-function-declaration]
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |                       ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:183:35: note: in definition of macro '_zassert_base'
+  183 |                         z_zassert(cond, _msg ? ("(" default_msg ")") : (default_msg), __FILE__,    \
+      |                                   ^~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:196:9: note: in expansion of macro '_zassert_va'
+  196 |         _zassert_va(cond, default_msg, COND_CODE_1(__VA_OPT__(1), (__VA_ARGS__), (NULL)))
+      |         ^~~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:321:34: note: in expansion of macro 'zassert'
+  321 | #define zassert_equal(a, b, ...) zassert((a) == (b), #a " not equal to " #b, ##__VA_ARGS__)
+      |                                  ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:9: note: in expansion of macro 'zassert_equal'
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |         ^~~~~~~~~~~~~
+[24/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[25/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[26/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/ring_buffer.c.obj
+[27/169] Building C object CMakeFiles/app.dir/home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf/src/ring_buf.c.obj
+[28/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt_common.c.obj
+[29/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt.c.obj
+[30/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32cube_hal.c.obj
+[31/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[32/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[33/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/stm32f4x/soc.c.obj
+[34/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/soc_config.c.obj
+[35/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+[36/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32_backup_domain.c.obj
+[37/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[38/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+[39/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[40/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/gpioport_mgr.c.obj
+ninja: build stopped: subcommand failed.
+</failure>
+		</testcase>
+		<testcase classname="homework.unit.ring_buf" name="homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval" time="0.00">
+			<failure type="failure" message="Build failure">Loading Zephyr default modules (Zephyr base).
+-- Application: /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+-- CMake version: 4.4.3
+-- Found Python3: /home/sweekar/Projects/zephyr-demo/.venv/bin/python3 (found suitable version "3.14.7", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: /home/sweekar/.cache/zephyr
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: stm32f4_disco, qualifiers: stm32f407xx
+-- Found host-tools: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/home/sweekar/zephyr-sdk-1.0.1)
+-- Found Dtc: /home/sweekar/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.7.0", minimum required is "1.4.6")
+-- Found BOARD.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts
+-- Generated zephyr.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.dts
+-- Generated pickled edt: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/Kconfig
+Loaded configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+Configuration saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/.config'
+Kconfig header saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h'
+-- Could NOT find Ccache (missing: CCACHE) (Required is at least version "4.12")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found GnuLd: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.43.1")
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+CMake Warning at /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/random/CMakeLists.txt:12 (message):
+
+
+      Warning: CONFIG_TIMER_RANDOM_GENERATOR and CONFIG_TEST_CSPRNG_GENERATOR are
+      not truly random generators. This capability is not secure and it is
+      provided for testing purposes only. Use it carefully.
+
+
+-- Found gen_kobject_list: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (9.6s)
+-- Generating done (0.2s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    TC_NAME
+
+
+-- Build files have been written to: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf
+ninja: warning: Ignoring jobserver: Pipe-based protocol is not supported! [ -j16 --jobserver-auth=7,8]
+[1/169] Preparing syscall dependency handling
+
+[2/169] Generating misc/generated/syscalls_subdirs.trigger
+[3/169] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr), build: v4.4.0-13939-g2f0bc11264a8
+[4/169] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[5/169] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+[6/169] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+[7/169] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[8/169] Generating include/generated/zephyr/driver-validation.h
+[9/169] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj
+[10/169] Generating ../../include/generated/zephyr/heap_constants.h
+[11/169] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[12/169] Generating include/generated/zephyr/offsets.h
+[13/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/set.c.obj
+[14/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[15/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[16/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitmask.c.obj
+[17/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/last_section_id.c.obj
+[18/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+[19/169] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+[20/169] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+[21/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[22/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/boot_banner.c.obj
+[23/169] Building C object CMakeFiles/app.dir/src/test_ring_buf.c.obj
+FAILED: [code=1] CMakeFiles/app.dir/src/test_ring_buf.c.obj 
+/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCORE_CM4 -DHSE_VALUE=8000000 -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DSTM32F407xx -DTC_RUNID=339e216fc3f346736d905ed5856e79e5 -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/../../app/modules/ring_buf/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/picolibc/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/common/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/drivers -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/st/stm32/stm32f4x/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/portability/posix/c_lib_ext/getopt -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/coverage -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/modules/cmsis_6/. -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/soc -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/stm32cube/common_ll/include -isystem /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/libc/common/include -fno-strict-aliasing -Werror -Os -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=/home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c17 -MD -MT CMakeFiles/app.dir/src/test_ring_buf.c.obj -MF CMakeFiles/app.dir/src/test_ring_buf.c.obj.d -o CMakeFiles/app.dir/src/test_ring_buf.c.obj -c /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function 'ring_buf_init_test_reinit_clears_state':
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:51:19: error: expected ';' before 'do'
+   51 |         rb_init(4)
+      |                   ^
+      |                   ;
+In file included from /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest.h:42,
+                 from /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:12:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:23: error: implicit declaration of function 'rb_cout'; did you mean 'rb_count'? [-Wimplicit-function-declaration]
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |                       ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:183:35: note: in definition of macro '_zassert_base'
+  183 |                         z_zassert(cond, _msg ? ("(" default_msg ")") : (default_msg), __FILE__,    \
+      |                                   ^~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:196:9: note: in expansion of macro '_zassert_va'
+  196 |         _zassert_va(cond, default_msg, COND_CODE_1(__VA_OPT__(1), (__VA_ARGS__), (NULL)))
+      |         ^~~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include/zephyr/ztest_assert.h:321:34: note: in expansion of macro 'zassert'
+  321 | #define zassert_equal(a, b, ...) zassert((a) == (b), #a " not equal to " #b, ##__VA_ARGS__)
+      |                                  ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:9: note: in expansion of macro 'zassert_equal'
+   53 |         zassert_equal(rb_cout(), 0, "Verifying if the count is 0");
+      |         ^~~~~~~~~~~~~
+[24/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[25/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[26/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/ring_buffer.c.obj
+[27/169] Building C object CMakeFiles/app.dir/home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf/src/ring_buf.c.obj
+[28/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt_common.c.obj
+[29/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt.c.obj
+[30/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32cube_hal.c.obj
+[31/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[32/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[33/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/stm32f4x/soc.c.obj
+[34/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/soc_config.c.obj
+[35/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+[36/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/stm32_backup_domain.c.obj
+[37/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[38/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+[39/169] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[40/169] Building C object zephyr/CMakeFiles/zephyr.dir/soc/st/stm32/common/gpioport_mgr.c.obj
+ninja: build stopped: subcommand failed.
+</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

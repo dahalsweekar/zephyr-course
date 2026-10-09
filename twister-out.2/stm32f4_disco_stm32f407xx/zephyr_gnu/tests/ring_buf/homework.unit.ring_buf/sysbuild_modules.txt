@@ -1,0 +1,1 @@
+"mcuboot":"/home/sweekar/Projects/zephyr-demo/zephyr-course/bootloader/mcuboot":"/home/sweekar/Projects/zephyr-demo/zephyr-course/bootloader/mcuboot/boot/zephyr/sysbuild"

@@ -1,0 +1,19 @@
+empty_file.o: \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/misc/empty_file.c \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/native/native_sim/native_sim.dts \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/posix/posix.dtsi \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/common/skeleton.dtsi \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/common/mem.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/adc/adc.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/dt-util.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_macro.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_internal.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_loops.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_listify.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_internal_is_eq.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_internal_util_inc.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_internal_util_dec.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/sys/util_internal_util_x2.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/display/panel.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
+ /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr/dt-bindings/gpio/gpio.h

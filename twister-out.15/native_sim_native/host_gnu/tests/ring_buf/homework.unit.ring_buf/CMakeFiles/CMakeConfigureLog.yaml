@@ -1,0 +1,3236 @@
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:28 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    name: "ZephyrBuildConfiguration"
+    configs:
+      -
+        filename: "ZephyrBuild.cps"
+        kind: "cps"
+      -
+        filename: "zephyrbuild.cps"
+        kind: "cps"
+      -
+        filename: "ZephyrBuildConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyrbuild-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: false
+      bypass_provider: false
+      names:
+        - "ZephyrBuild"
+      search_paths:
+        - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/../*"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: false
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: false
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.git/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.git/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.git/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.git/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.git/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.git/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.3/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.3/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.3/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.3/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.3/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.3/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/doc/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/doc/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/doc/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/doc/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/doc/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/doc/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.8/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.8/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.8/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.8/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.8/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.8/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.vscode/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.vscode/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.vscode/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.vscode/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.vscode/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.vscode/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.5/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.5/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.5/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.5/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.5/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.5/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.7/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.7/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.7/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.7/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.7/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.7/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.1/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.1/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.1/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.1/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.1/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.1/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.14/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.14/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.14/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.14/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.14/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.14/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.9/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.9/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.9/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.9/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.9/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.9/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/bootloader/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/bootloader/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/bootloader/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/bootloader/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/bootloader/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/bootloader/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/build/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/build/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/build/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/build/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/build/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/build/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/app/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/app/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/app/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/app/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/app/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/app/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.10/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.10/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.10/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.10/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.10/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.10/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.west/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.west/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.west/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.west/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.west/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/.west/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.12/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.12/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.12/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.12/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.12/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.12/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr-course/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr-course/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr-course/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr-course/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr-course/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr-course/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.13/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.13/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.13/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.13/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.13/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.13/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.11/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.11/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.11/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.11/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.11/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.11/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.6/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.6/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.6/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.6/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.6/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.6/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.4/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.4/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.4/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.4/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.4/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.4/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tools/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tools/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tools/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tools/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tools/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tools/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.2/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.2/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.2/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.2/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.2/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.2/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:41 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    name: "ZephyrAppConfiguration"
+    configs:
+      -
+        filename: "ZephyrApp.cps"
+        kind: "cps"
+      -
+        filename: "zephyrapp.cps"
+        kind: "cps"
+      -
+        filename: "ZephyrAppConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyrapp-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: false
+      bypass_provider: false
+      names:
+        - "ZephyrApp"
+      search_paths:
+        - "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: false
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: false
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/ZephyrAppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/zephyrapp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/lib/cps/ZephyrApp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/lib/cps/zephyrapp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/share/cps/ZephyrApp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/share/cps/zephyrapp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/ZephyrAppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/zephyrapp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/lib/cps/ZephyrApp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/lib/cps/zephyrapp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/share/cps/ZephyrApp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/share/cps/zephyrapp.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindHostTools.cmake:54 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:115 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "GPERF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gperf"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gperf"
+      - "/usr/local/bin/gperf"
+      - "/usr/bin/gperf"
+      - "/bin/gperf"
+      - "/usr/local/sbin/gperf"
+      - "/var/lib/flatpak/exports/bin/gperf"
+      - "/usr/lib/jvm/default/bin/gperf"
+      - "/usr/bin/site_perl/gperf"
+      - "/usr/bin/vendor_perl/gperf"
+      - "/usr/bin/core_perl/gperf"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindHostTools.cmake:57 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:115 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "OPENOCD"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "openocd"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/openocd"
+      - "/usr/local/bin/openocd"
+      - "/usr/bin/openocd"
+      - "/bin/openocd"
+      - "/usr/local/sbin/openocd"
+      - "/var/lib/flatpak/exports/bin/openocd"
+      - "/usr/lib/jvm/default/bin/openocd"
+      - "/usr/bin/site_perl/openocd"
+      - "/usr/bin/vendor_perl/openocd"
+      - "/usr/bin/core_perl/openocd"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindHostTools.cmake:60 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:115 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "BOSSAC"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "bossac"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/bossac"
+      - "/usr/local/bin/bossac"
+      - "/usr/bin/bossac"
+      - "/bin/bossac"
+      - "/usr/local/sbin/bossac"
+      - "/var/lib/flatpak/exports/bin/bossac"
+      - "/usr/lib/jvm/default/bin/bossac"
+      - "/usr/bin/site_perl/bossac"
+      - "/usr/bin/vendor_perl/bossac"
+      - "/usr/bin/core_perl/bossac"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindHostTools.cmake:65 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:115 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "IMGTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "imgtool.py"
+      - "imgtool"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/bootloader/mcuboot/scripts/"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/home/sweekar/Projects/zephyr-demo/zephyr-course/bootloader/mcuboot/scripts/imgtool.py"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindHostTools.cmake:68 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:115 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "PTY_INTERFACE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "winpty"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/winpty"
+      - "/usr/local/bin/winpty"
+      - "/usr/bin/winpty"
+      - "/bin/winpty"
+      - "/usr/local/sbin/winpty"
+      - "/var/lib/flatpak/exports/bin/winpty"
+      - "/usr/lib/jvm/default/bin/winpty"
+      - "/usr/bin/site_perl/winpty"
+      - "/usr/bin/vendor_perl/winpty"
+      - "/usr/bin/core_perl/winpty"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/compiler/host-gcc/generic.cmake:5 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindHostTools.cmake:125 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:115 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc"
+      - "/usr/local/bin/gcc"
+    found: "/usr/bin/gcc"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindDtc.cmake:19 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/dts.cmake:10 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:115 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "DTC"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dtc"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/dtc"
+      - "/usr/local/bin/dtc"
+    found: "/usr/bin/dtc"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindCcache.cmake:26 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:29 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CCACHE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ccache"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/ccache"
+      - "/usr/local/bin/ccache"
+      - "/usr/bin/ccache"
+      - "/bin/ccache"
+      - "/usr/local/sbin/ccache"
+      - "/var/lib/flatpak/exports/bin/ccache"
+      - "/usr/lib/jvm/default/bin/ccache"
+      - "/usr/bin/site_perl/ccache"
+      - "/usr/bin/vendor_perl/ccache"
+      - "/usr/bin/core_perl/ccache"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/compiler/host-gcc/target.cmake:5 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:116 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc"
+      - "/usr/local/bin/gcc"
+    found: "/usr/bin/gcc"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/compiler/host-gcc/target.cmake:19 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:116 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/usr/bin/gcc"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/CACHE/"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/INTERNAL/"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/ /"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/FORCE/"
+    found: "/usr/bin/gcc"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/compiler/host-gcc/target.cmake:20 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:116 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_GCOV"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcov"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcov"
+      - "/usr/local/bin/gcov"
+    found: "/usr/bin/gcov"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindGnuLd.cmake:64 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/linker/ld/target.cmake:4 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:117 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "GNULD_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld.bfd"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/ld.bfd"
+      - "/usr/local/bin/ld.bfd"
+    found: "/usr/bin/ld.bfd"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/bintools/host-gnu/target.cmake:5 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:119 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/objcopy"
+      - "/usr/local/bin/objcopy"
+    found: "/usr/bin/objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/bintools/host-gnu/target.cmake:6 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:119 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/objdump"
+      - "/usr/local/bin/objdump"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/bintools/host-gnu/target.cmake:7 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:119 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/ar"
+      - "/usr/local/bin/ar"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/bintools/host-gnu/target.cmake:8 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:119 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/ranlib"
+      - "/usr/local/bin/ranlib"
+    found: "/usr/bin/ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/bintools/host-gnu/target.cmake:9 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:119 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/readelf"
+      - "/usr/local/bin/readelf"
+    found: "/usr/bin/readelf"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/bintools/host-gnu/target.cmake:10 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:119 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/nm"
+      - "/usr/local/bin/nm"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/bintools/host-gnu/target.cmake:11 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:119 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/strip"
+      - "/usr/local/bin/strip"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/bintools/host-gnu/target.cmake:13 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/FindTargetTools.cmake:119 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:68 (find_package)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_GDB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gdb"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gdb"
+      - "/usr/local/bin/gdb"
+    found: "/usr/bin/gdb"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:213 (message)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      The target system is: Generic - 4.4.99 - posix
+      The host system is: Linux - 7.2.6-arch2-1 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Program used to build from build.ninja files."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ninja-build"
+      - "ninja"
+      - "samu"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/ninja-build"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/ninja"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/samu"
+      - "/usr/local/bin/ninja-build"
+      - "/usr/local/bin/ninja"
+      - "/usr/local/bin/samu"
+      - "/usr/bin/ninja-build"
+    found: "/usr/bin/ninja"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/"
+    found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/4.4.3/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/var/lib/flatpak/exports/bin/dlltool"
+      - "/usr/lib/jvm/default/bin/dlltool"
+      - "/usr/bin/site_perl/dlltool"
+      - "/usr/bin/vendor_perl/dlltool"
+      - "/usr/bin/core_perl/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/usr/bin/addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/var/lib/flatpak/exports/bin/tapi"
+      - "/usr/lib/jvm/default/bin/tapi"
+      - "/usr/bin/site_perl/tapi"
+      - "/usr/bin/vendor_perl/tapi"
+      - "/usr/bin/core_perl/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-16.2"
+      - "gcc-ar-16"
+      - "gcc-ar16"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-16.2"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ar-16.2"
+      - "/usr/local/bin/gcc-ar-16.2"
+      - "/bin/gcc-ar-16.2"
+      - "/usr/local/sbin/gcc-ar-16.2"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-16.2"
+      - "/usr/lib/jvm/default/bin/gcc-ar-16.2"
+      - "/usr/bin/site_perl/gcc-ar-16.2"
+      - "/usr/bin/vendor_perl/gcc-ar-16.2"
+      - "/usr/bin/core_perl/gcc-ar-16.2"
+      - "/usr/bin/gcc-ar-16"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ar-16"
+      - "/usr/local/bin/gcc-ar-16"
+      - "/bin/gcc-ar-16"
+      - "/usr/local/sbin/gcc-ar-16"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-16"
+      - "/usr/lib/jvm/default/bin/gcc-ar-16"
+      - "/usr/bin/site_perl/gcc-ar-16"
+      - "/usr/bin/vendor_perl/gcc-ar-16"
+      - "/usr/bin/core_perl/gcc-ar-16"
+      - "/usr/bin/gcc-ar16"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ar16"
+      - "/usr/local/bin/gcc-ar16"
+      - "/bin/gcc-ar16"
+      - "/usr/local/sbin/gcc-ar16"
+      - "/var/lib/flatpak/exports/bin/gcc-ar16"
+      - "/usr/lib/jvm/default/bin/gcc-ar16"
+      - "/usr/bin/site_perl/gcc-ar16"
+      - "/usr/bin/vendor_perl/gcc-ar16"
+      - "/usr/bin/core_perl/gcc-ar16"
+    found: "/usr/bin/gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-16.2"
+      - "gcc-ranlib-16"
+      - "gcc-ranlib16"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-16.2"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ranlib-16.2"
+      - "/usr/local/bin/gcc-ranlib-16.2"
+      - "/bin/gcc-ranlib-16.2"
+      - "/usr/local/sbin/gcc-ranlib-16.2"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-16.2"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-16.2"
+      - "/usr/bin/site_perl/gcc-ranlib-16.2"
+      - "/usr/bin/vendor_perl/gcc-ranlib-16.2"
+      - "/usr/bin/core_perl/gcc-ranlib-16.2"
+      - "/usr/bin/gcc-ranlib-16"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ranlib-16"
+      - "/usr/local/bin/gcc-ranlib-16"
+      - "/bin/gcc-ranlib-16"
+      - "/usr/local/sbin/gcc-ranlib-16"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-16"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-16"
+      - "/usr/bin/site_perl/gcc-ranlib-16"
+      - "/usr/bin/vendor_perl/gcc-ranlib-16"
+      - "/usr/bin/core_perl/gcc-ranlib-16"
+      - "/usr/bin/gcc-ranlib16"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ranlib16"
+      - "/usr/local/bin/gcc-ranlib16"
+      - "/bin/gcc-ranlib16"
+      - "/usr/local/sbin/gcc-ranlib16"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib16"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib16"
+      - "/usr/bin/site_perl/gcc-ranlib16"
+      - "/usr/bin/vendor_perl/gcc-ranlib16"
+      - "/usr/bin/core_perl/gcc-ranlib16"
+    found: "/usr/bin/gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/"
+    found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/4.4.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-16.2"
+      - "gcc-ar-16"
+      - "gcc-ar16"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-16.2"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ar-16.2"
+      - "/usr/local/bin/gcc-ar-16.2"
+      - "/bin/gcc-ar-16.2"
+      - "/usr/local/sbin/gcc-ar-16.2"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-16.2"
+      - "/usr/lib/jvm/default/bin/gcc-ar-16.2"
+      - "/usr/bin/site_perl/gcc-ar-16.2"
+      - "/usr/bin/vendor_perl/gcc-ar-16.2"
+      - "/usr/bin/core_perl/gcc-ar-16.2"
+      - "/usr/bin/gcc-ar-16"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ar-16"
+      - "/usr/local/bin/gcc-ar-16"
+      - "/bin/gcc-ar-16"
+      - "/usr/local/sbin/gcc-ar-16"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-16"
+      - "/usr/lib/jvm/default/bin/gcc-ar-16"
+      - "/usr/bin/site_perl/gcc-ar-16"
+      - "/usr/bin/vendor_perl/gcc-ar-16"
+      - "/usr/bin/core_perl/gcc-ar-16"
+      - "/usr/bin/gcc-ar16"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ar16"
+      - "/usr/local/bin/gcc-ar16"
+      - "/bin/gcc-ar16"
+      - "/usr/local/sbin/gcc-ar16"
+      - "/var/lib/flatpak/exports/bin/gcc-ar16"
+      - "/usr/lib/jvm/default/bin/gcc-ar16"
+      - "/usr/bin/site_perl/gcc-ar16"
+      - "/usr/bin/vendor_perl/gcc-ar16"
+      - "/usr/bin/core_perl/gcc-ar16"
+    found: "/usr/bin/gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-16.2"
+      - "gcc-ranlib-16"
+      - "gcc-ranlib16"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-16.2"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ranlib-16.2"
+      - "/usr/local/bin/gcc-ranlib-16.2"
+      - "/bin/gcc-ranlib-16.2"
+      - "/usr/local/sbin/gcc-ranlib-16.2"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-16.2"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-16.2"
+      - "/usr/bin/site_perl/gcc-ranlib-16.2"
+      - "/usr/bin/vendor_perl/gcc-ranlib-16.2"
+      - "/usr/bin/core_perl/gcc-ranlib-16.2"
+      - "/usr/bin/gcc-ranlib-16"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ranlib-16"
+      - "/usr/local/bin/gcc-ranlib-16"
+      - "/bin/gcc-ranlib-16"
+      - "/usr/local/sbin/gcc-ranlib-16"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-16"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-16"
+      - "/usr/bin/site_perl/gcc-ranlib-16"
+      - "/usr/bin/vendor_perl/gcc-ranlib-16"
+      - "/usr/bin/core_perl/gcc-ranlib-16"
+      - "/usr/bin/gcc-ranlib16"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ranlib16"
+      - "/usr/local/bin/gcc-ranlib16"
+      - "/bin/gcc-ranlib16"
+      - "/usr/local/sbin/gcc-ranlib16"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib16"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib16"
+      - "/usr/bin/site_perl/gcc-ranlib16"
+      - "/usr/bin/vendor_perl/gcc-ranlib16"
+      - "/usr/bin/core_perl/gcc-ranlib16"
+    found: "/usr/bin/gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:61 (_cmake_find_compiler)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:178 (enable_language)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER"
+    description: "ASM compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/usr/bin/gcc"
+    candidate_directories:
+      - "/usr/bin/"
+    found: "/usr/bin/gcc"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1328 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:178 (enable_language)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      gcc (GCC) 16.2.1 20260810
+      Copyright (C) 2026 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:271 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:178 (enable_language)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-"
+      - "gcc-ar-"
+      - "gcc-ar"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ar-"
+      - "/usr/local/bin/gcc-ar-"
+      - "/bin/gcc-ar-"
+      - "/usr/local/sbin/gcc-ar-"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-"
+      - "/usr/lib/jvm/default/bin/gcc-ar-"
+      - "/usr/bin/site_perl/gcc-ar-"
+      - "/usr/bin/vendor_perl/gcc-ar-"
+      - "/usr/bin/core_perl/gcc-ar-"
+      - "/usr/bin/gcc-ar-"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ar-"
+      - "/usr/local/bin/gcc-ar-"
+      - "/bin/gcc-ar-"
+      - "/usr/local/sbin/gcc-ar-"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-"
+      - "/usr/lib/jvm/default/bin/gcc-ar-"
+      - "/usr/bin/site_perl/gcc-ar-"
+      - "/usr/bin/vendor_perl/gcc-ar-"
+      - "/usr/bin/core_perl/gcc-ar-"
+    found: "/usr/bin/gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:271 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/kernel.cmake:178 (enable_language)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-"
+      - "gcc-ranlib-"
+      - "gcc-ranlib"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ranlib-"
+      - "/usr/local/bin/gcc-ranlib-"
+      - "/bin/gcc-ranlib-"
+      - "/usr/local/sbin/gcc-ranlib-"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-"
+      - "/usr/bin/site_perl/gcc-ranlib-"
+      - "/usr/bin/vendor_perl/gcc-ranlib-"
+      - "/usr/bin/core_perl/gcc-ranlib-"
+      - "/usr/bin/gcc-ranlib-"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gcc-ranlib-"
+      - "/usr/local/bin/gcc-ranlib-"
+      - "/bin/gcc-ranlib-"
+      - "/usr/local/sbin/gcc-ranlib-"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-"
+      - "/usr/bin/site_perl/gcc-ranlib-"
+      - "/usr/bin/vendor_perl/gcc-ranlib-"
+      - "/usr/bin/core_perl/gcc-ranlib-"
+    found: "/usr/bin/gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/lib/picolibc/CMakeLists.txt:49 (find_program)"
+    mode: "program"
+    variable: "CCACHE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ccache"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/ccache"
+      - "/usr/local/bin/ccache"
+      - "/usr/bin/ccache"
+      - "/bin/ccache"
+      - "/usr/local/sbin/ccache"
+      - "/var/lib/flatpak/exports/bin/ccache"
+      - "/usr/lib/jvm/default/bin/ccache"
+      - "/usr/bin/site_perl/ccache"
+      - "/usr/bin/vendor_perl/ccache"
+      - "/usr/bin/core_perl/ccache"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/kobj.cmake:3 (find_program)"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/CMakeLists.txt:985 (include)"
+    mode: "program"
+    variable: "GEN_KOBJECT_LIST"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gen_kobject_list"
+      - "gen_kobject_list.py"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/build/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gen_kobject_list"
+      - "/usr/local/bin/gen_kobject_list"
+      - "/usr/bin/gen_kobject_list"
+      - "/bin/gen_kobject_list"
+      - "/usr/local/sbin/gen_kobject_list"
+      - "/var/lib/flatpak/exports/bin/gen_kobject_list"
+      - "/usr/lib/jvm/default/bin/gen_kobject_list"
+      - "/usr/bin/site_perl/gen_kobject_list"
+      - "/usr/bin/vendor_perl/gen_kobject_list"
+      - "/usr/bin/core_perl/gen_kobject_list"
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/build/gen_kobject_list"
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/gen_kobject_list.py"
+      - "/usr/local/bin/gen_kobject_list.py"
+      - "/usr/bin/gen_kobject_list.py"
+      - "/bin/gen_kobject_list.py"
+      - "/usr/local/sbin/gen_kobject_list.py"
+      - "/var/lib/flatpak/exports/bin/gen_kobject_list.py"
+      - "/usr/lib/jvm/default/bin/gen_kobject_list.py"
+      - "/usr/bin/site_perl/gen_kobject_list.py"
+      - "/usr/bin/vendor_perl/gen_kobject_list.py"
+      - "/usr/bin/core_perl/gen_kobject_list.py"
+    found: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/build/gen_kobject_list.py"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/CMakeLists.txt:2105 (find_program)"
+    mode: "program"
+    variable: "MAKE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "make"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/make"
+      - "/usr/local/bin/make"
+    found: "/usr/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/reports/CMakeLists.txt:115 (find_program)"
+    mode: "program"
+    variable: "PUNCOVER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "puncover"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/puncover"
+      - "/usr/local/bin/puncover"
+      - "/usr/bin/puncover"
+      - "/bin/puncover"
+      - "/usr/local/sbin/puncover"
+      - "/var/lib/flatpak/exports/bin/puncover"
+      - "/usr/lib/jvm/default/bin/puncover"
+      - "/usr/bin/site_perl/puncover"
+      - "/usr/bin/vendor_perl/puncover"
+      - "/usr/bin/core_perl/puncover"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/reports/CMakeLists.txt:143 (find_program)"
+    mode: "program"
+    variable: "PAHOLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "pahole"
+    candidate_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/sweekar/Projects/zephyr-demo/.venv/bin/pahole"
+      - "/usr/local/bin/pahole"
+      - "/usr/bin/pahole"
+      - "/bin/pahole"
+      - "/usr/local/sbin/pahole"
+      - "/var/lib/flatpak/exports/bin/pahole"
+      - "/usr/lib/jvm/default/bin/pahole"
+      - "/usr/bin/site_perl/pahole"
+      - "/usr/bin/vendor_perl/pahole"
+      - "/usr/bin/core_perl/pahole"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:2 (find_package)"
+    name: "Zephyr"
+    configs:
+      -
+        filename: "Zephyr.cps"
+        kind: "cps"
+      -
+        filename: "zephyr.cps"
+        kind: "cps"
+      -
+        filename: "ZephyrConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyr-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      hints:
+        - "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr"
+      names:
+        - "Zephyr"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/lib/cps/Zephyr.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/lib/cps/zephyr.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/share/cps/Zephyr.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/CMakeFiles/pkgRedirects/share/cps/zephyr.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/cps/Zephyr.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/lib/cps/zephyr.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/cps/Zephyr.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/cps/zephyr.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake"
+      mode: "config"
+      version: "4.4.99"
+    search_context:
+      ENV{PATH}:
+        - "/home/sweekar/Projects/zephyr-demo/.venv/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+...

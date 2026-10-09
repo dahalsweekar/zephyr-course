@@ -1,0 +1,233 @@
+Loading Zephyr default modules (Zephyr base).
+-- Application: /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+-- CMake version: 4.4.3
+-- Found Python3: /home/sweekar/Projects/zephyr-demo/.venv/bin/python3 (found suitable version "3.14.7", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: /home/sweekar/.cache/zephyr
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: native_sim, qualifiers: native
+-- Found toolchain: host (gcc/ld)
+-- Found Dtc: /usr/bin/dtc (found suitable version "1.8.1", minimum required is "1.4.6")
+-- Found BOARD.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/native/native_sim/native_sim.dts
+-- Generated zephyr.dts: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.dts
+-- Generated pickled edt: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/Kconfig
+Loaded configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/native/native_sim/native_sim_defconfig'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'
+Merged configuration '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+Configuration saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/.config'
+Kconfig header saved to '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h'
+-- Could NOT find Ccache (missing: CCACHE) (Required is at least version "4.12")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found GnuLd: /usr/bin/ld.bfd (found version "2.47")
+-- The C compiler identification is GNU 16.2.1
+-- The CXX compiler identification is GNU 16.2.1
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/gcc
+CMake Warning at /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/random/CMakeLists.txt:12 (message):
+
+
+      Warning: CONFIG_TIMER_RANDOM_GENERATOR and CONFIG_TEST_CSPRNG_GENERATOR are
+      not truly random generators. This capability is not secure and it is
+      provided for testing purposes only. Use it carefully.
+
+
+-- Found gen_kobject_list: /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (9.1s)
+-- Generating done (0.3s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    TC_NAME
+
+
+-- Build files have been written to: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf
+ninja: warning: Ignoring jobserver: Pipe-based protocol is not supported! [ -j16 --jobserver-auth=7,8]
+[1/115] Preparing syscall dependency handling
+
+[2/115] Generating misc/generated/syscalls_subdirs.trigger
+[3/115] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.99 (/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr), build: v4.4.0-13939-g2f0bc11264a8
+[4/115] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[5/115] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+[6/115] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+[7/115] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[8/115] Generating include/generated/zephyr/driver-validation.h
+[9/115] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj
+[10/115] Generating ../../include/generated/zephyr/heap_constants.h
+[11/115] Building C object zephyr/CMakeFiles/offsets.dir/arch/posix/core/offsets/offsets.c.obj
+[12/115] Generating include/generated/zephyr/offsets.h
+[13/115] Building C object CMakeFiles/app.dir/src/test_ring_buf.c.obj
+FAILED: [code=1] CMakeFiles/app.dir/src/test_ring_buf.c.obj 
+/usr/bin/gcc -DK_HEAP_MEM_POOL_SIZE=0 -DTC_RUNID=005ccca0a4dbd2a7862231fd6e086f5d -D__ZEPHYR__=1 -I/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/../../app/modules/ring_buf/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/soc/native/inf_clock -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/native/native_sim -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/native_simulator/common/src/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/scripts/native_simulator/native/src/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/include -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/coverage -I/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/subsys/testsuite/ztest/include -fno-strict-aliasing -Werror -Os -imacros /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h -fno-common -g -fdiagnostics-color=always -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/sweekar/Projects/zephyr-demo/zephyr-course=WEST_TOPDIR -ffunction-sections -fdata-sections -m32 -msse2 -mfpmath=sse -fvisibility=hidden -fno-freestanding -std=c17 -MD -MT CMakeFiles/app.dir/src/test_ring_buf.c.obj -MF CMakeFiles/app.dir/src/test_ring_buf.c.obj.d -o CMakeFiles/app.dir/src/test_ring_buf.c.obj -c /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:2:1: error: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | ZTEST(ring_buf_init, test_reinit_clears_state)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:2:1: error: type of ‘ring_buf_init’ defaults to ‘int’ [-Wimplicit-int]
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:2:1: error: type of ‘test_reinit_clears_state’ defaults to ‘int’ [-Wimplicit-int]
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:4:5: error: implicit declaration of function ‘zassert_ok’ [-Wimplicit-function-declaration]
+    4 |     zassert_ok(rb_push(99), "Push should succeed");
+      |     ^~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:4:16: error: implicit declaration of function ‘rb_push’ [-Wimplicit-function-declaration]
+    4 |     zassert_ok(rb_push(99), "Push should succeed");
+      |                ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:6:5: error: implicit declaration of function ‘rb_init’ [-Wimplicit-function-declaration]
+    6 |     rb_init(4);
+      |     ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:8:5: error: implicit declaration of function ‘zassert_true’ [-Wimplicit-function-declaration]
+    8 |     zassert_true(rb_is_empty(), "Buffer should be empty after reinit");
+      |     ^~~~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:8:18: error: implicit declaration of function ‘rb_is_empty’ [-Wimplicit-function-declaration]
+    8 |     zassert_true(rb_is_empty(), "Buffer should be empty after reinit");
+      |                  ^~~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:9:5: error: implicit declaration of function ‘zassert_equal’ [-Wimplicit-function-declaration]
+    9 |     zassert_equal(rb_count(), 0, "Count should be zero after reinit");
+      |     ^~~~~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:9:19: error: implicit declaration of function ‘rb_count’ [-Wimplicit-function-declaration]
+    9 |     zassert_equal(rb_count(), 0, "Count should be zero after reinit");
+      |                   ^~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: At top level:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:12:1: error: return type defaults to ‘int’ [-Wimplicit-int]
+   12 | ZTEST(ring_buf_push_pop, test_single_push_pop)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:12:1: error: redefinition of ‘ZTEST’
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:2:1: note: previous definition of ‘ZTEST’ with type ‘int()’
+    2 | ZTEST(ring_buf_init, test_reinit_clears_state)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:12:1: error: type of ‘ring_buf_push_pop’ defaults to ‘int’ [-Wimplicit-int]
+   12 | ZTEST(ring_buf_push_pop, test_single_push_pop)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:12:1: error: type of ‘test_single_push_pop’ defaults to ‘int’ [-Wimplicit-int]
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:17:16: error: implicit declaration of function ‘rb_pop’ [-Wimplicit-function-declaration]
+   17 |     zassert_ok(rb_pop(&v), "Pop should succeed");
+      |                ^~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: At top level:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:22:1: error: return type defaults to ‘int’ [-Wimplicit-int]
+   22 | ZTEST(ring_buf_push_pop, test_fifo_order)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:22:1: error: redefinition of ‘ZTEST’
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:2:1: note: previous definition of ‘ZTEST’ with type ‘int()’
+    2 | ZTEST(ring_buf_init, test_reinit_clears_state)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:22:1: error: type of ‘ring_buf_push_pop’ defaults to ‘int’ [-Wimplicit-int]
+   22 | ZTEST(ring_buf_push_pop, test_fifo_order)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:22:1: error: type of ‘test_fifo_order’ defaults to ‘int’ [-Wimplicit-int]
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: At top level:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:42:1: error: return type defaults to ‘int’ [-Wimplicit-int]
+   42 | ZTEST(ring_buf_push_pop, test_push_full_returns_enospc)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:42:1: error: redefinition of ‘ZTEST’
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:2:1: note: previous definition of ‘ZTEST’ with type ‘int()’
+    2 | ZTEST(ring_buf_init, test_reinit_clears_state)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:42:1: error: type of ‘ring_buf_push_pop’ defaults to ‘int’ [-Wimplicit-int]
+   42 | ZTEST(ring_buf_push_pop, test_push_full_returns_enospc)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:42:1: error: type of ‘test_push_full_returns_enospc’ defaults to ‘int’ [-Wimplicit-int]
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:49:18: error: implicit declaration of function ‘rb_is_full’ [-Wimplicit-function-declaration]
+   49 |     zassert_true(rb_is_full(), "Buffer should be full");
+      |                  ^~~~~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:50:33: error: ‘ENOSPC’ undeclared (first use in this function)
+   50 |     zassert_equal(rb_push(99), -ENOSPC,
+      |                                 ^~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:50:33: note: each undeclared identifier is reported only once for each function it appears in
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: At top level:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:55:1: error: return type defaults to ‘int’ [-Wimplicit-int]
+   55 | ZTEST(ring_buf_boundaries, test_peek_does_not_consume)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:55:1: error: redefinition of ‘ZTEST’
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:2:1: note: previous definition of ‘ZTEST’ with type ‘int()’
+    2 | ZTEST(ring_buf_init, test_reinit_clears_state)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:55:1: error: type of ‘ring_buf_boundaries’ defaults to ‘int’ [-Wimplicit-int]
+   55 | ZTEST(ring_buf_boundaries, test_peek_does_not_consume)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:55:1: error: type of ‘test_peek_does_not_consume’ defaults to ‘int’ [-Wimplicit-int]
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:61:16: error: implicit declaration of function ‘rb_peek’ [-Wimplicit-function-declaration]
+   61 |     zassert_ok(rb_peek(&v), "First peek should succeed");
+      |                ^~~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: At top level:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:71:1: error: return type defaults to ‘int’ [-Wimplicit-int]
+   71 | ZTEST(ring_buf_boundaries, test_pop_null_returns_einval)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:71:1: error: redefinition of ‘ZTEST’
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:2:1: note: previous definition of ‘ZTEST’ with type ‘int()’
+    2 | ZTEST(ring_buf_init, test_reinit_clears_state)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:71:1: error: type of ‘ring_buf_boundaries’ defaults to ‘int’ [-Wimplicit-int]
+   71 | ZTEST(ring_buf_boundaries, test_pop_null_returns_einval)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:71:1: error: type of ‘test_pop_null_returns_einval’ defaults to ‘int’ [-Wimplicit-int]
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:73:26: error: ‘NULL’ undeclared (first use in this function)
+   73 |     zassert_equal(rb_pop(NULL), -EINVAL,
+      |                          ^~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:1:1: note: ‘NULL’ is defined in header ‘<stddef.h>’; this is probably fixable by adding ‘#include <stddef.h>’
+  +++ |+#include <stddef.h>
+    1 | 
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:73:34: error: ‘EINVAL’ undeclared (first use in this function)
+   73 |     zassert_equal(rb_pop(NULL), -EINVAL,
+      |                                  ^~~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: At top level:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:77:1: error: return type defaults to ‘int’ [-Wimplicit-int]
+   77 | ZTEST(ring_buf_boundaries, test_is_full_after_fill)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:77:1: error: redefinition of ‘ZTEST’
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:2:1: note: previous definition of ‘ZTEST’ with type ‘int()’
+    2 | ZTEST(ring_buf_init, test_reinit_clears_state)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:77:1: error: type of ‘ring_buf_boundaries’ defaults to ‘int’ [-Wimplicit-int]
+   77 | ZTEST(ring_buf_boundaries, test_is_full_after_fill)
+      | ^~~~~
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:77:1: error: type of ‘test_is_full_after_fill’ defaults to ‘int’ [-Wimplicit-int]
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:20:1: error: control reaches end of non-void function [-Werror=return-type]
+   20 | }
+      | ^
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:40:1: error: control reaches end of non-void function [-Werror=return-type]
+   40 | }
+      | ^
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:53:1: error: control reaches end of non-void function [-Werror=return-type]
+   53 | }
+      | ^
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:69:1: error: control reaches end of non-void function [-Werror=return-type]
+   69 | }
+      | ^
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:75:1: error: control reaches end of non-void function [-Werror=return-type]
+   75 | }
+      | ^
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c: In function ‘ZTEST’:
+/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/src/test_ring_buf.c:86:1: error: control reaches end of non-void function [-Werror=return-type]
+   86 | }
+      | ^
+cc1: all warnings being treated as errors
+[14/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[15/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf.c.obj
+[16/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitmask.c.obj
+[17/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/boot_banner.c.obj
+[18/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[19/115] Building C object CMakeFiles/app.dir/home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf/src/ring_buf.c.obj
+[20/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[21/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[22/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[23/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[24/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[25/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[26/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/set.c.obj
+[27/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+[28/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+[29/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[30/115] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+ninja: build stopped: subcommand failed.

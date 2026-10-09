@@ -10,4 +10,5 @@ tests:
     platform_allow: 
      - native_sim
      - qemu_x86
+     - stm32f4_disco
     timeout: 60

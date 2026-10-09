@@ -1,0 +1,17 @@
+2026-10-09 16:46:54,779 - twister - INFO - Using Ninja..
+2026-10-09 16:46:55,047 - twister - INFO - Zephyr version: v4.4.0-13939-g2f0bc11264a8
+2026-10-09 16:46:55,053 - twister - DEBUG - Running cmake script /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-10-09 16:46:55,053 - twister - DEBUG - Calling cmake: /usr/bin/cmake -DFORMAT=json -P /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-10-09 16:46:55,292 - twister - DEBUG - Finished running /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-10-09 16:46:55,293 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-10-09 16:46:56,983 - twister - DEBUG - Reading testsuite configuration files under /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf...
+2026-10-09 16:46:56,983 - twister - DEBUG - Found possible testsuite in /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+2026-10-09 16:46:56,985 - twister - DEBUG - No duplicates found.
+2026-10-09 16:46:56,985 - twister - DEBUG -  platform filter: ['nativ_sim']
+2026-10-09 16:46:56,985 - twister - DEBUG - platform_pattern: []
+2026-10-09 16:46:56,985 - twister - DEBUG -    vendor filter: []
+2026-10-09 16:46:56,985 - twister - DEBUG -      arch_filter: None
+2026-10-09 16:46:56,985 - twister - DEBUG -       tag_filter: None
+2026-10-09 16:46:56,985 - twister - DEBUG -      exclude_tag: None
+2026-10-09 16:46:56,985 - twister - DEBUG - Checking platform filter: ['nativ_sim']
+2026-10-09 16:46:56,985 - twister - ERROR - platform_filter - unrecognized platform - nativ_sim

@@ -1,0 +1,22 @@
+{
+    "environment":{
+        "os":"Linux",
+        "zephyr_version":"v4.4.0-13939-g2f0bc11264a8",
+        "toolchain":"zephyr/gnu",
+        "commit_date":"2026-09-01T21:06:11-04:00",
+        "run_date":"2026-10-09T14:44:53+00:00",
+        "options":{
+            "help":null,
+            "zephyr_base":null,
+            "quiet":0,
+            "command":"twister",
+            "testsuite_root":[
+                "tests/ring_buf"
+            ],
+            "platform":[
+                "stm32f4_disco"
+            ]
+        }
+    },
+    "testsuites":[]
+}
