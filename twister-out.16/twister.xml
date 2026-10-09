@@ -1,0 +1,8 @@
+<testsuites>
+	<testsuite name="stm32f4_disco/stm32f407xx" timestamp="2026-10-09T17:56:19.699100" time="0.0" tests="1" failures="0" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="v4.4.0-13939-g2f0bc11264a8" />
+		</properties>
+		<testcase classname="stm32f4_disco/stm32f407xx:homework.unit.ring_buf" name="homework.unit.ring_buf" time="0.00" />
+	</testsuite>
+</testsuites>

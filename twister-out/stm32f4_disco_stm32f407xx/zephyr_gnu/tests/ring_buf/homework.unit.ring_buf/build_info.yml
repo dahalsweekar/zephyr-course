@@ -41,9 +41,12 @@ cmake:
      - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/arc'
      - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts'
   kconfig:
+    extra-user-files:
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/twister/testsuite_extra.conf'
     files:
      - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig'
      - '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/twister/testsuite_extra.conf'
      - '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
     user-files:
      - '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'

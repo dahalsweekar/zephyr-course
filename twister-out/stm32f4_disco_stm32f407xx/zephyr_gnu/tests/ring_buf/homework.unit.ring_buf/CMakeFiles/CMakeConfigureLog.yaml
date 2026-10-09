@@ -224,6 +224,30 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.17/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.17/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.17/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.17/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.17/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.17/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
         path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.5/ZephyrBuildConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -533,6 +557,30 @@ events:
         reason: "no_exist"
       -
         path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.12/share/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.16/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.16/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.16/lib/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.16/lib/cps/zephyrbuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.16/share/cps/ZephyrBuild.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out.16/share/cps/zephyrbuild.cps"
         mode: "cps"
         reason: "no_exist"
       -

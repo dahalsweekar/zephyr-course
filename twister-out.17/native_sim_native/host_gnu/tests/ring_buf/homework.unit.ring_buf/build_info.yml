@@ -1,0 +1,59 @@
+cmake:
+  application:
+    configuration-dir: '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf'
+    source-dir: '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf'
+  board:
+    name: 'native_sim'
+    path:
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/native/native_sim'
+    qualifiers: 'native'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/bindings'
+    files:
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/native/native_sim/native_sim.dts'
+    include-dirs:
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/ambiq/dts'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/atmel/include'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/bouffalolab/include'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/bouffalolab/include/zephyr'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/gigadevice/include'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/infineon/dts'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/microchip/include'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/microchip/dts'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/nuvoton/dts'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/nxp/dts'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/stm32/dts'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/modules/hal/ti/dts'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/include/zephyr'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/common'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/vendor'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/rx'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/x86'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/xtensa'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/sparc'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/riscv'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/posix'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/arm64'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/arm'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts/arc'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/dts'
+  kconfig:
+    extra-user-files:
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/twister/testsuite_extra.conf'
+    files:
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/boards/native/native_sim/native_sim_defconfig'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/twister/testsuite_extra.conf'
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/native_sim_native/host_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+    user-files:
+     - '/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf/prj.conf'
+  toolchain:
+    name: 'host'
+    path: ''
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr'
+version: '0.1.0'

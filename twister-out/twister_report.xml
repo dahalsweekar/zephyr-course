@@ -1,5 +1,5 @@
 <testsuites>
-	<testsuite name="stm32f4_disco/stm32f407xx" timestamp="2026-10-09T17:56:19.699100" time="0.0" tests="8" failures="0" errors="0" skipped="8">
+	<testsuite name="stm32f4_disco/stm32f407xx" timestamp="2026-10-09T17:59:53.747172" time="0.0" tests="8" failures="0" errors="0" skipped="8">
 		<properties>
 			<property name="version" value="v4.4.0-13939-g2f0bc11264a8" />
 		</properties>

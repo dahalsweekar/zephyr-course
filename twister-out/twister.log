@@ -1,46 +1,55 @@
-2026-10-09 17:56:18,251 - twister - INFO - Using Ninja..
-2026-10-09 17:56:18,331 - twister - INFO - Zephyr version: v4.4.0-13939-g2f0bc11264a8
-2026-10-09 17:56:18,335 - twister - DEBUG - Running cmake script /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
-2026-10-09 17:56:18,335 - twister - DEBUG - Calling cmake: /usr/bin/cmake -DFORMAT=json -P /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
-2026-10-09 17:56:18,553 - twister - DEBUG - Finished running /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
-2026-10-09 17:56:18,553 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
-2026-10-09 17:56:19,696 - twister - DEBUG - Reading testsuite configuration files under /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf...
-2026-10-09 17:56:19,696 - twister - DEBUG - Found possible testsuite in /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
-2026-10-09 17:56:19,697 - twister - DEBUG - No duplicates found.
-2026-10-09 17:56:19,698 - twister - DEBUG -  platform filter: ['stm32f4_disco']
-2026-10-09 17:56:19,698 - twister - DEBUG - platform_pattern: []
-2026-10-09 17:56:19,698 - twister - DEBUG -    vendor filter: []
-2026-10-09 17:56:19,698 - twister - DEBUG -      arch_filter: None
-2026-10-09 17:56:19,698 - twister - DEBUG -       tag_filter: None
-2026-10-09 17:56:19,698 - twister - DEBUG -      exclude_tag: None
-2026-10-09 17:56:19,698 - twister - DEBUG - Checking platform filter: ['stm32f4_disco']
-2026-10-09 17:56:19,698 - twister - INFO - Building initial testsuite list...
-2026-10-09 17:56:19,699 - twister - INFO - Built testsuite list in 0.00 seconds
-2026-10-09 17:56:19,699 - twister - INFO - Writing JSON report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/testplan.json
-2026-10-09 17:56:19,713 - twister - INFO - JOBS: 16
-2026-10-09 17:56:19,713 - twister - INFO - Adding tasks to the queue...
-2026-10-09 17:56:19,713 - twister - DEBUG - adding stm32f4_disco/stm32f407xx/zephyr/gnu/homework.unit.ring_buf
-2026-10-09 17:56:19,714 - twister - INFO - Added initial list of jobs to queue
-2026-10-09 17:56:19,721 - twister - DEBUG - Running cmake on /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf for stm32f4_disco/stm32f407xx
-2026-10-09 17:56:19,722 - twister - DEBUG - Calling cmake: /usr/bin/cmake -B/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf -DTC_RUNID=d0215133c392946ebd743c19d64a2f80 -DTC_NAME=homework.unit.ring_buf -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/home/sweekar/Projects/zephyr-demo/.venv/bin/python3 -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf -DBOARD=stm32f4_disco/stm32f407xx
-2026-10-09 17:56:19,747 - twister - DEBUG - Launched 16 jobs
-2026-10-09 17:56:27,591 - twister - DEBUG - Finished running cmake /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf for stm32f4_disco/stm32f407xx in 7.87 seconds
-2026-10-09 17:56:27,593 - twister - DEBUG - build test: stm32f4_disco/stm32f407xx/zephyr/gnu/homework.unit.ring_buf
-2026-10-09 17:56:27,594 - twister - DEBUG - Building /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf for stm32f4_disco/stm32f407xx
-2026-10-09 17:56:27,594 - twister - DEBUG - Running /usr/bin/cmake --build /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf
-2026-10-09 17:56:34,947 - twister - DEBUG - Finished building /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf for stm32f4_disco/stm32f407xx in 7.35 seconds
-2026-10-09 17:56:34,948 - twister - DEBUG - Determine test cases for test instance: stm32f4_disco/stm32f407xx/zephyr/gnu/homework.unit.ring_buf
-2026-10-09 17:56:34,948 - twister - DEBUG - Determine test cases for test suite: homework.unit.ring_buf
-2026-10-09 17:56:34,992 - twister - DEBUG - Test instance stm32f4_disco/stm32f407xx/zephyr/gnu/homework.unit.ring_buf already has 8 testcase(s) known: [<TestCase homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc with not run>, <TestCase homework.unit.ring_buf.ring_buf_init.fresh_state with not run>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval with not run>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.fifo_order with not run>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill with not run>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume with not run>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.single_push_pop with not run>, <TestCase homework.unit.ring_buf.ring_buf_init.reinit_clears_state with not run>]
-2026-10-09 17:56:34,992 - twister - DEBUG - Detected 8 Ztest case(s): [homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill, homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval, homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume, homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc, homework.unit.ring_buf.ring_buf_push_pop.fifo_order, homework.unit.ring_buf.ring_buf_push_pop.single_push_pop, homework.unit.ring_buf.ring_buf_init.reinit_clears_state, homework.unit.ring_buf.ring_buf_init.fresh_state] in /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.elf
-2026-10-09 17:56:34,997 - twister - DEBUG - Instance stm32f4_disco/stm32f407xx/zephyr/gnu/homework.unit.ring_buf can't run (run:False, handler.ready:False)
-2026-10-09 17:56:35,009 - twister - INFO - 1 test scenarios (1 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
-2026-10-09 17:56:35,022 - twister - INFO - [32m0 of 1[39m executed test configurations passed (0.00%), [36m1[39m built (not run), 0 failed, 0 errored, with no warnings in 16.77 seconds.
-2026-10-09 17:56:35,022 - twister - INFO - 0 of 0 executed test cases passed (0.00%) on 0 out of total 1708 platforms (0.00%).
-2026-10-09 17:56:35,022 - twister - INFO - 8 selected test cases not executed: 8 not run (built only).
-2026-10-09 17:56:35,022 - twister - INFO - [32m0[39m test configurations executed on platforms, [36m1[39m test configurations were only built.
-2026-10-09 17:56:35,022 - twister - INFO - Saving reports...
-2026-10-09 17:56:35,022 - twister - INFO - Writing JSON report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/twister.json
-2026-10-09 17:56:35,023 - twister - INFO - Writing xunit report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/twister.xml...
-2026-10-09 17:56:35,024 - twister - INFO - Writing xunit report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/twister_report.xml...
-2026-10-09 17:56:35,025 - twister - INFO - Run completed
+2026-10-09 17:59:52,814 - twister - INFO - Using Ninja..
+2026-10-09 17:59:52,886 - twister - INFO - Zephyr version: v4.4.0-13939-g2f0bc11264a8
+2026-10-09 17:59:52,889 - twister - DEBUG - Running cmake script /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-10-09 17:59:52,889 - twister - DEBUG - Calling cmake: /usr/bin/cmake -DFORMAT=json -P /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-10-09 17:59:53,094 - twister - DEBUG - Finished running /home/sweekar/Projects/zephyr-demo/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-10-09 17:59:53,094 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-10-09 17:59:53,743 - twister - DEBUG - Reading testsuite configuration files under /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf...
+2026-10-09 17:59:53,743 - twister - DEBUG - Found possible testsuite in /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf
+2026-10-09 17:59:53,746 - twister - DEBUG - No duplicates found.
+2026-10-09 17:59:53,746 - twister - DEBUG -  platform filter: ['stm32f4_disco']
+2026-10-09 17:59:53,746 - twister - DEBUG - platform_pattern: []
+2026-10-09 17:59:53,746 - twister - DEBUG -    vendor filter: []
+2026-10-09 17:59:53,746 - twister - DEBUG -      arch_filter: None
+2026-10-09 17:59:53,746 - twister - DEBUG -       tag_filter: None
+2026-10-09 17:59:53,746 - twister - DEBUG -      exclude_tag: None
+2026-10-09 17:59:53,746 - twister - DEBUG - Checking platform filter: ['stm32f4_disco']
+2026-10-09 17:59:53,746 - twister - INFO - Building initial testsuite list...
+2026-10-09 17:59:53,747 - twister - INFO - Built testsuite list in 0.00 seconds
+2026-10-09 17:59:53,747 - twister - INFO - Writing JSON report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/testplan.json
+2026-10-09 17:59:53,761 - twister - INFO - JOBS: 16
+2026-10-09 17:59:53,761 - twister - INFO - Adding tasks to the queue...
+2026-10-09 17:59:53,761 - twister - DEBUG - adding stm32f4_disco/stm32f407xx/zephyr/gnu/homework.unit.ring_buf
+2026-10-09 17:59:53,762 - twister - INFO - Added initial list of jobs to queue
+2026-10-09 17:59:53,769 - twister - DEBUG - Running cmake on /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf for stm32f4_disco/stm32f407xx
+2026-10-09 17:59:53,769 - twister - DEBUG - Calling cmake: /usr/bin/cmake -B/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf -DTC_RUNID=f842406a0fb046ed79286dea0bb1ce7b -DTC_NAME=homework.unit.ring_buf -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/home/sweekar/Projects/zephyr-demo/.venv/bin/python3 -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf -DOVERLAY_CONFIG=/home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/twister/testsuite_extra.conf -DBOARD=stm32f4_disco/stm32f407xx
+2026-10-09 17:59:53,791 - twister - DEBUG - Launched 16 jobs
+2026-10-09 17:59:58,861 - twister - DEBUG - Finished running cmake /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf for stm32f4_disco/stm32f407xx in 5.09 seconds
+2026-10-09 17:59:58,864 - twister - DEBUG - build test: stm32f4_disco/stm32f407xx/zephyr/gnu/homework.unit.ring_buf
+2026-10-09 17:59:58,865 - twister - DEBUG - Building /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf for stm32f4_disco/stm32f407xx
+2026-10-09 17:59:58,865 - twister - DEBUG - Running /usr/bin/cmake --build /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf
+2026-10-09 18:00:03,090 - twister - DEBUG - Finished building /home/sweekar/Projects/zephyr-demo/zephyr-course/tests/ring_buf for stm32f4_disco/stm32f407xx in 4.23 seconds
+2026-10-09 18:00:03,091 - twister - DEBUG - Determine test cases for test instance: stm32f4_disco/stm32f407xx/zephyr/gnu/homework.unit.ring_buf
+2026-10-09 18:00:03,091 - twister - DEBUG - Determine test cases for test suite: homework.unit.ring_buf
+2026-10-09 18:00:03,120 - twister - DEBUG - Test instance stm32f4_disco/stm32f407xx/zephyr/gnu/homework.unit.ring_buf already has 8 testcase(s) known: [<TestCase homework.unit.ring_buf.ring_buf_push_pop.single_push_pop with not run>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc with not run>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval with not run>, <TestCase homework.unit.ring_buf.ring_buf_push_pop.fifo_order with not run>, <TestCase homework.unit.ring_buf.ring_buf_init.fresh_state with not run>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume with not run>, <TestCase homework.unit.ring_buf.ring_buf_init.reinit_clears_state with not run>, <TestCase homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill with not run>]
+2026-10-09 18:00:03,120 - twister - DEBUG - Detected 8 Ztest case(s): [homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill, homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval, homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume, homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc, homework.unit.ring_buf.ring_buf_push_pop.fifo_order, homework.unit.ring_buf.ring_buf_push_pop.single_push_pop, homework.unit.ring_buf.ring_buf_init.reinit_clears_state, homework.unit.ring_buf.ring_buf_init.fresh_state] in /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/stm32f4_disco_stm32f407xx/zephyr_gnu/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.elf
+2026-10-09 18:00:03,124 - twister - DEBUG - Instance stm32f4_disco/stm32f407xx/zephyr/gnu/homework.unit.ring_buf can't run (run:False, handler.ready:False)
+2026-10-09 18:00:03,131 - twister - INFO - 1 test scenarios (1 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-10-09 18:00:03,138 - twister - INFO - [32m0 of 1[39m executed test configurations passed (0.00%), [36m1[39m built (not run), 0 failed, 0 errored, with no warnings in 10.32 seconds.
+2026-10-09 18:00:03,138 - twister - INFO - 0 of 0 executed test cases passed (0.00%) on 0 out of total 1708 platforms (0.00%).
+2026-10-09 18:00:03,138 - twister - INFO - 8 selected test cases not executed: 8 not run (built only).
+2026-10-09 18:00:03,138 - twister - INFO - [32m0[39m test configurations executed on platforms, [36m1[39m test configurations were only built.
+2026-10-09 18:00:03,210 - twister - DEBUG - Select gcovr as the coverage tool...
+2026-10-09 18:00:03,211 - twister - DEBUG - Using gcov tool: /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcov
+2026-10-09 18:00:03,211 - twister - DEBUG - Running: gcovr -r /home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf --gcov-ignore-parse-errors=negative_hits.warn_once_per_file --gcov-executable /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcov -e tests/* --gcov-object-directory /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out --gcov-ignore-parse-errors=suspicious_hits.warn_once_per_file -e .*generated.* -e .*/tests/.* -e .*/samples/.* --exclude-branches-by-pattern (^\s*LOG_(?:HEXDUMP_)?(?:DBG|INF|WRN|ERR)\(.*)|(^\s*__ASSERT(?:_EVAL|_NO_MSG|_POST_ACTION)?\(.*) -v --merge-mode-functions=separate --json -o /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/coverage.json /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out
+2026-10-09 18:00:03,301 - twister - DEBUG - Running: gcovr -r /home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf -v --merge-mode-functions=separate --gcov-executable /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcov -f tests/ztest -e tests/ztest/test/* --json -o /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/ztest.json /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out --gcov-object-directory /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out
+2026-10-09 18:00:03,390 - twister - DEBUG - Coverage collected 2 reports from: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out
+2026-10-09 18:00:03,391 - twister - DEBUG - Running: gcovr -r /home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf -v --merge-mode-functions=separate --html /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/coverage/index.html --html-details --add-tracefile /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/coverage.json --add-tracefile /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/ztest.json --json-summary-pretty --json-summary /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/coverage_summary.json
+2026-10-09 18:00:03,525 - twister - INFO - HTML report generated: /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/coverage/index.html
+2026-10-09 18:00:03,525 - twister - DEBUG - All coverage data processed: True
+2026-10-09 18:00:03,525 - twister - INFO - Coverage data processed in 0.31 seconds
+2026-10-09 18:00:03,525 - twister - INFO - Saving reports...
+2026-10-09 18:00:03,525 - twister - INFO - Writing JSON report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/twister.json
+2026-10-09 18:00:03,526 - twister - INFO - Writing xunit report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/twister.xml...
+2026-10-09 18:00:03,527 - twister - INFO - Writing xunit report /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/twister_report.xml...
+2026-10-09 18:00:03,528 - twister - INFO - Run completed
