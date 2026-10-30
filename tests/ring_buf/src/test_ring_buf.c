@@ -88,12 +88,15 @@ ZTEST(ring_buf_push_pop, test_fifo_order)
 	int v = 0;
 
 	zassert_ok(rb_push(1), "Queue must not overflow");
-	zassert_ok(rb_push(3), "Queue must not overflow");
-	zassert_ok(rb_push(2), "Queue must not overflow");
+	zassert_ok(rb_push(2), "Queue must not overflow"); // Fixed push order
+	zassert_ok(rb_push(3), "Queue must not overflow"); // Fixed push order
+
 	zassert_ok(rb_pop(&v), "First pop should succeed");
 	zassert_equal(v, 1, "Is this value 1?");
+
 	zassert_ok(rb_pop(&v), "Second pop should succeed");
 	zassert_equal(v, 2, "Is this value 2?");
+
 	zassert_ok(rb_pop(&v), "Third pop should succeed");
 	zassert_equal(v, 3, "Is this value 3?");
 	//ztest_test_skip();
@@ -130,13 +133,18 @@ ZTEST(ring_buf_boundaries, test_peek_does_not_consume)
 	 * -> v == 7; rb_count() still == 1.
 	 * See TEST_SPEC.md "Suite ring_buf_boundaries" #1.
 	 */	
-	int v;
+	int v = 0;
 	zassert_ok(rb_push(7), "Queue must not overflow");
+
+	// First peek check
 	zassert_ok(rb_peek(&v), "First peek should succeed");
-	zassert_equal(rb_peek(&v), 7, "Must be equal to 7");
+	zassert_equal(v, 7, "Must be equal to 7"); // Test the variable, not the function return!
+
+	// Second peek check
 	zassert_ok(rb_peek(&v), "Second peek should succeed");
-	zassert_equal(rb_peek(&v), 7, "Still must be equal to 7");
-	zassert_equal(rb_count(), 1, "Only one item should have ben pushed until now");
+	zassert_equal(v, 7, "Still must be equal to 7");
+
+	zassert_equal(rb_count(), 1, "Only one item should have been pushed until now");
 	//ztest_test_skip();
 }
 
