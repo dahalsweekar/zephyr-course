@@ -52,7 +52,7 @@ config LED_BRIGHTNESS
 config LED_FADE_DURATION_MS
     int "Fade duration (ms)"
     default 500
-    range 1 5000
+    range 0 5000
 
 # Menu for expert settings
 menu "Expert settings"
