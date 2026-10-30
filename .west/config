@@ -1,7 +1,7 @@
 [manifest]
-path = zephyr-course
+path = zephyr
 file = west.yml
 
 [zephyr]
-base = deps/zephyr
+base = zephyr
 
