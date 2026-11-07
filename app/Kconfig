@@ -42,7 +42,11 @@ config BLINK_SLEEP_TIME_MS
         LED Blink rate
 
 # Menu for Advanced LED settings
-menu "Advanced LED settings"
+menuconfig "ADVANCED_LED_SETTINGS"
+    bool "Advanced LED settings"
+    default y
+
+if ADVANCED_LED_SETTINGS
 
 config LED_BRIGHTNESS
     int "LED brightness (0-100)"
