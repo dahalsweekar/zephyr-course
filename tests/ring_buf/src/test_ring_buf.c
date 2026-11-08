@@ -132,7 +132,7 @@ ZTEST(ring_buf_boundaries, test_peek_does_not_consume)
 	/* TODO(l8-task1): rb_push(7); rb_peek(&v) -> v == 7; rb_peek(&v) again
 	 * -> v == 7; rb_count() still == 1.
 	 * See TEST_SPEC.md "Suite ring_buf_boundaries" #1.
-	 */	
+	 */
 	int v = 0;
 	zassert_ok(rb_push(7), "Queue must not overflow");
 

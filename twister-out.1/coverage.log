@@ -1,0 +1,77 @@
+Running: gcovr -r /home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf --gcov-ignore-parse-errors=negative_hits.warn_once_per_file --gcov-executable /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcov -e tests/* --gcov-object-directory /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out --gcov-ignore-parse-errors=suspicious_hits.warn_once_per_file -e .*generated.* -e .*/tests/.* -e .*/samples/.* --exclude-branches-by-pattern (^\s*LOG_(?:HEXDUMP_)?(?:DBG|INF|WRN|ERR)\(.*)|(^\s*__ASSERT(?:_EVAL|_NO_MSG|_POST_ACTION)?\(.*) -v --merge-mode-functions=separate --json -o /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/coverage.json /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out
+(DEBUG) gcovr version 8.6
+(DEBUG) File system is case sensitive.
+(DEBUG) Filters for --filter: (1)
+(DEBUG)  - DirectoryPrefixFilter(/home/sweekar/Projects/zephyr\-demo/zephyr\-course/app/modules/ring_buf/)
+(DEBUG) Filters for --exclude: (4)
+(DEBUG)  - RelativeFilter(tests/* root=/home/sweekar/Projects/zephyr-demo/zephyr-course)
+(DEBUG)  - RelativeFilter(.*generated.* root=/home/sweekar/Projects/zephyr-demo/zephyr-course)
+(DEBUG)  - RelativeFilter(.*/tests/.* root=/home/sweekar/Projects/zephyr-demo/zephyr-course)
+(DEBUG)  - RelativeFilter(.*/samples/.* root=/home/sweekar/Projects/zephyr-demo/zephyr-course)
+(DEBUG) Filters for --include: (0)
+(DEBUG) Filters for --gcov-filter: (1)
+(DEBUG)  - AlwaysMatchFilter()
+(DEBUG) Filters for --gcov-exclude: (0)
+(DEBUG) Filters for --exclude-directory: (0)
+(DEBUG) Filters for --trace-include: (0)
+(DEBUG) Filters for --trace-exclude: (0)
+(DEBUG) Patterns for --exclude-function: (0)
+(DEBUG) Patterns for --exclude-lines-by-pattern: (0)
+(DEBUG) Patterns for --exclude-branches-by-pattern: (1)
+(DEBUG)  - re.compile('(^\\s*LOG_(?:HEXDUMP_)?(?:DBG|INF|WRN|ERR)\\(.*)|(^\\s*__ASSERT(?:_EVAL|_NO_MSG|_POST_ACTION)?\\(.*)')
+(INFO) Reading coverage data...
+(DEBUG) Scanning directory twister-out for gcda/gcno files...
+(DEBUG) Found 0 files (and will process 0)
+(DEBUG) Using 1 workers.
+(DEBUG) Pool started with 1 threads
+(WARNING) All coverage data is filtered out. Please check your paths and filters.
+(INFO) Writing coverage report...
+Running: gcovr -r /home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf -v --merge-mode-functions=separate --gcov-executable /home/sweekar/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcov -f tests/ztest -e tests/ztest/test/* --json -o /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/ztest.json /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out --gcov-object-directory /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out
+(DEBUG) gcovr version 8.6
+(DEBUG) File system is case sensitive.
+(DEBUG) Filters for --filter: (1)
+(DEBUG)  - RelativeFilter(tests/ztest root=/home/sweekar/Projects/zephyr-demo/zephyr-course)
+(DEBUG) Filters for --exclude: (1)
+(DEBUG)  - RelativeFilter(tests/ztest/test/* root=/home/sweekar/Projects/zephyr-demo/zephyr-course)
+(DEBUG) Filters for --include: (0)
+(DEBUG) Filters for --gcov-filter: (1)
+(DEBUG)  - AlwaysMatchFilter()
+(DEBUG) Filters for --gcov-exclude: (0)
+(DEBUG) Filters for --exclude-directory: (0)
+(DEBUG) Filters for --trace-include: (0)
+(DEBUG) Filters for --trace-exclude: (0)
+(DEBUG) Patterns for --exclude-function: (0)
+(DEBUG) Patterns for --exclude-lines-by-pattern: (0)
+(DEBUG) Patterns for --exclude-branches-by-pattern: (0)
+(INFO) Reading coverage data...
+(DEBUG) Scanning directory twister-out for gcda/gcno files...
+(DEBUG) Found 0 files (and will process 0)
+(DEBUG) Using 1 workers.
+(DEBUG) Pool started with 1 threads
+(WARNING) All coverage data is filtered out. Please check your paths and filters.
+(INFO) Writing coverage report...
+Running: gcovr -r /home/sweekar/Projects/zephyr-demo/zephyr-course/app/modules/ring_buf -v --merge-mode-functions=separate --html /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/coverage/index.html --html-details --add-tracefile /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/coverage.json --add-tracefile /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/ztest.json --json-summary-pretty --json-summary /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/coverage_summary.json
+(DEBUG) gcovr version 8.6
+(DEBUG) File system is case sensitive.
+(DEBUG) Filters for --filter: (1)
+(DEBUG)  - DirectoryPrefixFilter(/home/sweekar/Projects/zephyr\-demo/zephyr\-course/app/modules/ring_buf/)
+(DEBUG) Filters for --exclude: (0)
+(DEBUG) Filters for --include: (0)
+(DEBUG) Filters for --gcov-filter: (1)
+(DEBUG)  - AlwaysMatchFilter()
+(DEBUG) Filters for --gcov-exclude: (0)
+(DEBUG) Filters for --exclude-directory: (0)
+(DEBUG) Filters for --trace-include: (0)
+(DEBUG) Filters for --trace-exclude: (0)
+(DEBUG) Patterns for --exclude-function: (0)
+(DEBUG) Patterns for --exclude-lines-by-pattern: (0)
+(DEBUG) Patterns for --exclude-branches-by-pattern: (0)
+(INFO) Reading coverage data...
+(DEBUG) Check if /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/ztest.json is included (trace)...
+(DEBUG)   No filter matched.
+(DEBUG) --> File is excluded.
+(DEBUG) Check if /home/sweekar/Projects/zephyr-demo/zephyr-course/twister-out/coverage.json is included (trace)...
+(DEBUG)   No filter matched.
+(DEBUG) --> File is excluded.
+(WARNING) All coverage data is filtered out. Please check your paths and filters.
+(INFO) Writing coverage report...

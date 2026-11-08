@@ -1,0 +1,360 @@
+/dts-v1/;
+
+/* node '/' defined in zephyr/dts/common/skeleton.dtsi:9 */
+/ {
+	#address-cells = < 0x1 >;    /* in zephyr/dts/common/skeleton.dtsi:10 */
+	#size-cells = < 0x1 >;       /* in zephyr/dts/common/skeleton.dtsi:11 */
+	compatible = "zephyr,posix"; /* in zephyr/boards/native/native_sim/native_sim.dts:16 */
+	model = "Native Sim Board";  /* in zephyr/boards/native/native_sim/native_sim.dts:17 */
+
+	/* node '/chosen' defined in zephyr/dts/common/skeleton.dtsi:13 */
+	chosen {
+		zephyr,console = &uart0;                     /* in zephyr/boards/native/native_sim/native_sim.dts:20 */
+		zephyr,shell-uart = &uart0;                  /* in zephyr/boards/native/native_sim/native_sim.dts:21 */
+		zephyr,uart-mcumgr = &uart0;                 /* in zephyr/boards/native/native_sim/native_sim.dts:22 */
+		zephyr,flash = &flash0;                      /* in zephyr/boards/native/native_sim/native_sim.dts:23 */
+		zephyr,entropy = &rng;                       /* in zephyr/boards/native/native_sim/native_sim.dts:24 */
+		zephyr,flash-controller = &flashcontroller0; /* in zephyr/boards/native/native_sim/native_sim.dts:25 */
+		zephyr,display = &sdl_dc;                    /* in zephyr/boards/native/native_sim/native_sim.dts:26 */
+		zephyr,canbus = &can_loopback0;              /* in zephyr/boards/native/native_sim/native_sim.dts:27 */
+		zephyr,code-partition = &slot0_partition;    /* in zephyr/boards/native/native_sim/native_sim.dts:28 */
+		zephyr,bt-hci = &bt_hci_userchan;            /* in zephyr/boards/native/native_sim/native_sim.dts:29 */
+		zephyr,touch = &input_sdl_touch;             /* in zephyr/boards/native/native_sim/native_sim.dts:30 */
+	};
+
+	/* node '/aliases' defined in zephyr/dts/common/skeleton.dtsi:15 */
+	aliases {
+		codec0 = &audio_codec;      /* in zephyr/boards/native/native_sim/native_sim.dts:34 */
+		dmic0 = &dmic0;             /* in zephyr/boards/native/native_sim/native_sim.dts:35 */
+		eeprom-0 = &eeprom0;        /* in zephyr/boards/native/native_sim/native_sim.dts:36 */
+		fuel-gauge0 = &fuel_gauge0; /* in zephyr/boards/native/native_sim/native_sim.dts:37 */
+		i2c-0 = &i2c0;              /* in zephyr/boards/native/native_sim/native_sim.dts:38 */
+		i2s-node0 = &i2s_rxtx;      /* in zephyr/boards/native/native_sim/native_sim.dts:39 */
+		spi-0 = &spi0;              /* in zephyr/boards/native/native_sim/native_sim.dts:40 */
+		led0 = &led0;               /* in zephyr/boards/native/native_sim/native_sim.dts:41 */
+		rtc = &rtc;                 /* in zephyr/boards/native/native_sim/native_sim.dts:42 */
+	};
+
+	/* node '/leds' defined in zephyr/boards/native/native_sim/native_sim.dts:45 */
+	leds: leds {
+		compatible = "gpio-leds"; /* in zephyr/boards/native/native_sim/native_sim.dts:46 */
+
+		/* node '/leds/led_0' defined in zephyr/boards/native/native_sim/native_sim.dts:48 */
+		led0: led_0 {
+			gpios = < &gpio0 0x0 0x0 >; /* in zephyr/boards/native/native_sim/native_sim.dts:49 */
+			label = "Green LED";        /* in zephyr/boards/native/native_sim/native_sim.dts:50 */
+		};
+	};
+
+	/* node '/cpus' defined in zephyr/boards/native/native_sim/native_sim.dts:54 */
+	cpus {
+		timebase-frequency = < 0xf4240 >; /* in zephyr/boards/native/native_sim/native_sim.dts:55 */
+		#address-cells = < 0x1 >;         /* in zephyr/boards/native/native_sim/native_sim.dts:56 */
+		#size-cells = < 0x0 >;            /* in zephyr/boards/native/native_sim/native_sim.dts:57 */
+
+		/* node '/cpus/cpu@0' defined in zephyr/boards/native/native_sim/native_sim.dts:59 */
+		cpu0: cpu@0 {
+			compatible = "zephyr,native-sim-cpu"; /* in zephyr/boards/native/native_sim/native_sim.dts:60 */
+			reg = < 0x0 >;                        /* in zephyr/boards/native/native_sim/native_sim.dts:61 */
+		};
+	};
+
+	/* node '/flash-controller@0' defined in zephyr/boards/native/native_sim/native_sim.dts:65 */
+	flashcontroller0: flash-controller@0 {
+		compatible = "zephyr,sim-flash"; /* in zephyr/boards/native/native_sim/native_sim.dts:66 */
+		reg = < 0x0 0x200000 >;          /* in zephyr/boards/native/native_sim/native_sim.dts:67 */
+		ranges;                          /* in zephyr/boards/native/native_sim/native_sim.dts:68 */
+		#address-cells = < 0x1 >;        /* in zephyr/boards/native/native_sim/native_sim.dts:70 */
+		#size-cells = < 0x1 >;           /* in zephyr/boards/native/native_sim/native_sim.dts:71 */
+		erase-value = < 0xff >;          /* in zephyr/boards/native/native_sim/native_sim.dts:72 */
+
+		/* node '/flash-controller@0/flash@0' defined in zephyr/boards/native/native_sim/native_sim.dts:74 */
+		flash0: flash@0 {
+			compatible = "soc-nv-flash";   /* in zephyr/boards/native/native_sim/native_sim.dts:75 */
+			reg = < 0x0 0x200000 >;        /* in zephyr/boards/native/native_sim/native_sim.dts:76 */
+			ranges = < 0x0 0x0 0x200000 >; /* in zephyr/boards/native/native_sim/native_sim.dts:77 */
+			erase-block-size = < 0x1000 >; /* in zephyr/boards/native/native_sim/native_sim.dts:78 */
+			write-block-size = < 0x1 >;    /* in zephyr/boards/native/native_sim/native_sim.dts:79 */
+			#address-cells = < 0x1 >;      /* in zephyr/boards/native/native_sim/native_sim.dts:80 */
+			#size-cells = < 0x1 >;         /* in zephyr/boards/native/native_sim/native_sim.dts:81 */
+			status = "okay";               /* in zephyr/boards/native/native_sim/native_sim.dts:82 */
+
+			/* node '/flash-controller@0/flash@0/partitions' defined in zephyr/boards/native/native_sim/native_sim.dts:84 */
+			partitions {
+				ranges;                   /* in zephyr/boards/native/native_sim/native_sim.dts:85 */
+				#address-cells = < 0x1 >; /* in zephyr/boards/native/native_sim/native_sim.dts:86 */
+				#size-cells = < 0x1 >;    /* in zephyr/boards/native/native_sim/native_sim.dts:87 */
+
+				/* node '/flash-controller@0/flash@0/partitions/partition@0' defined in zephyr/boards/native/native_sim/native_sim.dts:89 */
+				boot_partition: partition@0 {
+					compatible = "zephyr,mapped-partition"; /* in zephyr/boards/native/native_sim/native_sim.dts:90 */
+					reg = < 0x0 0xc000 >;                   /* in zephyr/boards/native/native_sim/native_sim.dts:91 */
+					label = "mcuboot";                      /* in zephyr/boards/native/native_sim/native_sim.dts:92 */
+				};
+
+				/* node '/flash-controller@0/flash@0/partitions/partition@c000' defined in zephyr/boards/native/native_sim/native_sim.dts:95 */
+				slot0_partition: partition@c000 {
+					compatible = "zephyr,mapped-partition"; /* in zephyr/boards/native/native_sim/native_sim.dts:96 */
+					reg = < 0xc000 0x69000 >;               /* in zephyr/boards/native/native_sim/native_sim.dts:97 */
+					label = "image-0";                      /* in zephyr/boards/native/native_sim/native_sim.dts:98 */
+				};
+
+				/* node '/flash-controller@0/flash@0/partitions/partition@75000' defined in zephyr/boards/native/native_sim/native_sim.dts:101 */
+				slot1_partition: partition@75000 {
+					compatible = "zephyr,mapped-partition"; /* in zephyr/boards/native/native_sim/native_sim.dts:102 */
+					reg = < 0x75000 0x69000 >;              /* in zephyr/boards/native/native_sim/native_sim.dts:103 */
+					label = "image-1";                      /* in zephyr/boards/native/native_sim/native_sim.dts:104 */
+				};
+
+				/* node '/flash-controller@0/flash@0/partitions/partition@de000' defined in zephyr/boards/native/native_sim/native_sim.dts:107 */
+				scratch_partition: partition@de000 {
+					compatible = "zephyr,mapped-partition"; /* in zephyr/boards/native/native_sim/native_sim.dts:108 */
+					reg = < 0xde000 0x1e000 >;              /* in zephyr/boards/native/native_sim/native_sim.dts:109 */
+					label = "image-scratch";                /* in zephyr/boards/native/native_sim/native_sim.dts:110 */
+				};
+
+				/* node '/flash-controller@0/flash@0/partitions/partition@fc000' defined in zephyr/boards/native/native_sim/native_sim.dts:113 */
+				storage_partition: partition@fc000 {
+					compatible = "zephyr,mapped-partition"; /* in zephyr/boards/native/native_sim/native_sim.dts:114 */
+					reg = < 0xfc000 0x4000 >;               /* in zephyr/boards/native/native_sim/native_sim.dts:115 */
+					label = "storage";                      /* in zephyr/boards/native/native_sim/native_sim.dts:116 */
+				};
+			};
+		};
+	};
+
+	/* node '/eeprom' defined in zephyr/boards/native/native_sim/native_sim.dts:122 */
+	eeprom0: eeprom {
+		compatible = "zephyr,sim-eeprom"; /* in zephyr/boards/native/native_sim/native_sim.dts:123 */
+		size = < 0x8000 >;                /* in zephyr/boards/native/native_sim/native_sim.dts:124 */
+		status = "okay";                  /* in zephyr/boards/native/native_sim/native_sim.dts:125 */
+	};
+
+	/* node '/fuel_gauge' defined in zephyr/boards/native/native_sim/native_sim.dts:128 */
+	fuel_gauge0: fuel_gauge {
+		compatible = "zephyr,native-linux-fuel-gauge"; /* in zephyr/boards/native/native_sim/native_sim.dts:129 */
+		path = "/sys/class/power_supply/BAT0";         /* in zephyr/boards/native/native_sim/native_sim.dts:131 */
+		status = "disabled";                           /* in zephyr/boards/native/native_sim/native_sim.dts:132 */
+	};
+
+	/* node '/otp' defined in zephyr/boards/native/native_sim/native_sim.dts:135 */
+	otp0: otp {
+		compatible = "zephyr,otp-emul"; /* in zephyr/boards/native/native_sim/native_sim.dts:136 */
+		size = < 0x400 >;               /* in zephyr/boards/native/native_sim/native_sim.dts:137 */
+		status = "okay";                /* in zephyr/boards/native/native_sim/native_sim.dts:138 */
+	};
+
+	/* node '/uart' defined in zephyr/boards/native/native_sim/native_sim.dts:141 */
+	uart0: uart {
+		compatible = "zephyr,native-pty-uart"; /* in zephyr/boards/native/native_sim/native_sim.dts:142 */
+		current-speed = < 0x0 >;               /* in zephyr/boards/native/native_sim/native_sim.dts:146 */
+		status = "okay";                       /* in zephyr/boards/native/native_sim/native_sim.dts:147 */
+	};
+
+	/* node '/uart_1' defined in zephyr/boards/native/native_sim/native_sim.dts:150 */
+	uart1: uart_1 {
+		compatible = "zephyr,native-pty-uart"; /* in zephyr/boards/native/native_sim/native_sim.dts:151 */
+		current-speed = < 0x0 >;               /* in zephyr/boards/native/native_sim/native_sim.dts:155 */
+		status = "disabled";                   /* in zephyr/boards/native/native_sim/native_sim.dts:156 */
+	};
+
+	/* node '/rng' defined in zephyr/boards/native/native_sim/native_sim.dts:159 */
+	rng: rng {
+		compatible = "zephyr,native-sim-rng"; /* in zephyr/boards/native/native_sim/native_sim.dts:160 */
+		status = "okay";                      /* in zephyr/boards/native/native_sim/native_sim.dts:161 */
+	};
+
+	/* node '/counter' defined in zephyr/boards/native/native_sim/native_sim.dts:164 */
+	counter0: counter {
+		compatible = "zephyr,native-sim-counter"; /* in zephyr/boards/native/native_sim/native_sim.dts:165 */
+		#counter-capture-cells = < 0x2 >;         /* in zephyr/boards/native/native_sim/native_sim.dts:166 */
+		status = "okay";                          /* in zephyr/boards/native/native_sim/native_sim.dts:167 */
+	};
+
+	/* node '/gpio_emul' defined in zephyr/boards/native/native_sim/native_sim.dts:170 */
+	gpio0: gpio_emul {
+		compatible = "zephyr,gpio-emul"; /* in zephyr/boards/native/native_sim/native_sim.dts:171 */
+		rising-edge;                     /* in zephyr/boards/native/native_sim/native_sim.dts:172 */
+		falling-edge;                    /* in zephyr/boards/native/native_sim/native_sim.dts:173 */
+		high-level;                      /* in zephyr/boards/native/native_sim/native_sim.dts:174 */
+		low-level;                       /* in zephyr/boards/native/native_sim/native_sim.dts:175 */
+		gpio-controller;                 /* in zephyr/boards/native/native_sim/native_sim.dts:176 */
+		#gpio-cells = < 0x2 >;           /* in zephyr/boards/native/native_sim/native_sim.dts:177 */
+		status = "okay";                 /* in zephyr/boards/native/native_sim/native_sim.dts:178 */
+		phandle = < 0x1 >;               /* in zephyr/boards/native/native_sim/native_sim.dts:49 */
+	};
+
+	/* node '/udc0' defined in zephyr/boards/native/native_sim/native_sim.dts:181 */
+	zephyr_udc0: udc0 {
+		compatible = "zephyr,native-posix-udc"; /* in zephyr/boards/native/native_sim/native_sim.dts:182 */
+	};
+
+	/* node '/sdl_dc' defined in zephyr/boards/native/native_sim/native_sim.dts:185 */
+	sdl_dc: sdl_dc {
+		compatible = "zephyr,sdl-dc"; /* in zephyr/boards/native/native_sim/native_sim.dts:186 */
+		pixel-format = < 0x8 >;       /* in zephyr/boards/native/native_sim/native_sim.dts:187 */
+		height = < 0xf0 >;            /* in zephyr/boards/native/native_sim/native_sim.dts:188 */
+		width = < 0x140 >;            /* in zephyr/boards/native/native_sim/native_sim.dts:189 */
+		phandle = < 0x2 >;            /* in zephyr/boards/native/native_sim/native_sim.dts:194 */
+	};
+
+	/* node '/input-sdl-touch' defined in zephyr/boards/native/native_sim/native_sim.dts:192 */
+	input_sdl_touch: input-sdl-touch {
+		compatible = "zephyr,input-sdl-touch"; /* in zephyr/boards/native/native_sim/native_sim.dts:193 */
+		display = < &sdl_dc >;                 /* in zephyr/boards/native/native_sim/native_sim.dts:194 */
+	};
+
+	/* node '/can_loopback0' defined in zephyr/boards/native/native_sim/native_sim.dts:197 */
+	can_loopback0: can_loopback0 {
+		compatible = "zephyr,can-loopback"; /* in zephyr/boards/native/native_sim/native_sim.dts:198 */
+		status = "okay";                    /* in zephyr/boards/native/native_sim/native_sim.dts:199 */
+	};
+
+	/* node '/can' defined in zephyr/boards/native/native_sim/native_sim.dts:202 */
+	can0: can {
+		compatible = "zephyr,native-linux-can"; /* in zephyr/boards/native/native_sim/native_sim.dts:203 */
+		host-interface = "zcan0";               /* in zephyr/boards/native/native_sim/native_sim.dts:207 */
+		status = "disabled";                    /* in zephyr/boards/native/native_sim/native_sim.dts:208 */
+	};
+
+	/* node '/rtc' defined in zephyr/boards/native/native_sim/native_sim.dts:211 */
+	rtc: rtc {
+		compatible = "zephyr,rtc-emul"; /* in zephyr/boards/native/native_sim/native_sim.dts:212 */
+		alarms-count = < 0x2 >;         /* in zephyr/boards/native/native_sim/native_sim.dts:213 */
+		status = "okay";                /* in zephyr/boards/native/native_sim/native_sim.dts:214 */
+	};
+
+	/* node '/adc' defined in zephyr/boards/native/native_sim/native_sim.dts:217 */
+	adc0: adc {
+		compatible = "zephyr,adc-emul"; /* in zephyr/boards/native/native_sim/native_sim.dts:218 */
+		nchannels = < 0x2 >;            /* in zephyr/boards/native/native_sim/native_sim.dts:219 */
+		#io-channel-cells = < 0x1 >;    /* in zephyr/boards/native/native_sim/native_sim.dts:220 */
+		status = "okay";                /* in zephyr/boards/native/native_sim/native_sim.dts:221 */
+	};
+
+	/* node '/audio_codec' defined in zephyr/boards/native/native_sim/native_sim.dts:224 */
+	audio_codec: audio_codec {
+		compatible = "zephyr,dummy-codec"; /* in zephyr/boards/native/native_sim/native_sim.dts:225 */
+		status = "okay";                   /* in zephyr/boards/native/native_sim/native_sim.dts:226 */
+	};
+
+	/* node '/dmic0' defined in zephyr/boards/native/native_sim/native_sim.dts:229 */
+	dmic0: dmic0 {
+		compatible = "zephyr,native-sim-dmic"; /* in zephyr/boards/native/native_sim/native_sim.dts:230 */
+		status = "okay";                       /* in zephyr/boards/native/native_sim/native_sim.dts:231 */
+	};
+
+	/* node '/i2s_rx' defined in zephyr/boards/native/native_sim/native_sim.dts:234 */
+	i2s_rx0: i2s_rx {
+		compatible = "zephyr,native-sim-i2s"; /* in zephyr/boards/native/native_sim/native_sim.dts:235 */
+		stream-direction = "rx";              /* in zephyr/boards/native/native_sim/native_sim.dts:236 */
+		status = "okay";                      /* in zephyr/boards/native/native_sim/native_sim.dts:237 */
+	};
+
+	/* node '/i2s_rxtx' defined in zephyr/boards/native/native_sim/native_sim.dts:240 */
+	i2s_rxtx: i2s_rxtx {
+		compatible = "zephyr,native-sim-i2s"; /* in zephyr/boards/native/native_sim/native_sim.dts:241 */
+		stream-direction = "both";            /* in zephyr/boards/native/native_sim/native_sim.dts:242 */
+		status = "okay";                      /* in zephyr/boards/native/native_sim/native_sim.dts:243 */
+	};
+
+	/* node '/i2s_tx' defined in zephyr/boards/native/native_sim/native_sim.dts:246 */
+	i2s_tx0: i2s_tx {
+		compatible = "zephyr,native-sim-i2s"; /* in zephyr/boards/native/native_sim/native_sim.dts:247 */
+		stream-direction = "tx";              /* in zephyr/boards/native/native_sim/native_sim.dts:248 */
+		status = "okay";                      /* in zephyr/boards/native/native_sim/native_sim.dts:249 */
+	};
+
+	/* node '/dma' defined in zephyr/boards/native/native_sim/native_sim.dts:252 */
+	dma: dma {
+		compatible = "zephyr,dma-emul"; /* in zephyr/boards/native/native_sim/native_sim.dts:253 */
+		#dma-cells = < 0x1 >;           /* in zephyr/boards/native/native_sim/native_sim.dts:254 */
+		stack-size = < 0x1000 >;        /* in zephyr/boards/native/native_sim/native_sim.dts:255 */
+	};
+
+	/* node '/bt_hci_userchan' defined in zephyr/boards/native/native_sim/native_sim.dts:258 */
+	bt_hci_userchan: bt_hci_userchan {
+		compatible = "zephyr,bt-hci-userchan"; /* in zephyr/boards/native/native_sim/native_sim.dts:259 */
+		status = "okay";                       /* in zephyr/boards/native/native_sim/native_sim.dts:260 */
+	};
+
+	/* node '/performance-states' defined in zephyr/boards/native/native_sim/native_sim.dts:263 */
+	performance-states {
+
+		/* node '/performance-states/pstate_0' defined in zephyr/boards/native/native_sim/native_sim.dts:264 */
+		pstate_0: pstate_0 {
+			compatible = "zephyr,native-sim-pstate"; /* in zephyr/boards/native/native_sim/native_sim.dts:265 */
+			load-threshold = < 0x32 >;               /* in zephyr/boards/native/native_sim/native_sim.dts:266 */
+			pstate-id = < 0x0 >;                     /* in zephyr/boards/native/native_sim/native_sim.dts:267 */
+		};
+
+		/* node '/performance-states/pstate_1' defined in zephyr/boards/native/native_sim/native_sim.dts:270 */
+		pstate_1: pstate_1 {
+			compatible = "zephyr,native-sim-pstate"; /* in zephyr/boards/native/native_sim/native_sim.dts:271 */
+			load-threshold = < 0x14 >;               /* in zephyr/boards/native/native_sim/native_sim.dts:272 */
+			pstate-id = < 0x1 >;                     /* in zephyr/boards/native/native_sim/native_sim.dts:273 */
+		};
+
+		/* node '/performance-states/pstate_2' defined in zephyr/boards/native/native_sim/native_sim.dts:276 */
+		pstate_2: pstate_2 {
+			compatible = "zephyr,native-sim-pstate"; /* in zephyr/boards/native/native_sim/native_sim.dts:277 */
+			load-threshold = < 0x0 >;                /* in zephyr/boards/native/native_sim/native_sim.dts:278 */
+			pstate-id = < 0x2 >;                     /* in zephyr/boards/native/native_sim/native_sim.dts:279 */
+		};
+	};
+
+	/* node '/zeth0' defined in zephyr/boards/native/native_sim/native_sim.dts:283 */
+	zeth0: zeth0 {
+		compatible = "zephyr,native-tap";               /* in zephyr/boards/native/native_sim/native_sim.dts:284 */
+		host-interface = "zeth";                        /* in zephyr/boards/native/native_sim/native_sim.dts:285 */
+		zephyr,random-mac-address;                      /* in zephyr/boards/native/native_sim/native_sim.dts:286 */
+		zephyr,mac-address-prefix = [ 00 00 5E 00 53 ]; /* in zephyr/boards/native/native_sim/native_sim.dts:287 */
+		status = "okay";                                /* in zephyr/boards/native/native_sim/native_sim.dts:288 */
+
+		/* node '/zeth0/ptp_clock' defined in zephyr/boards/native/native_sim/native_sim.dts:290 */
+		ptp_clock: ptp_clock {
+			compatible = "zephyr,native-ptp-clock"; /* in zephyr/boards/native/native_sim/native_sim.dts:291 */
+			status = "okay";                        /* in zephyr/boards/native/native_sim/native_sim.dts:292 */
+		};
+	};
+
+	/* node '/i2c@100' defined in zephyr/boards/native/native_sim/native_sim.dts:296 */
+	i2c0: i2c@100 {
+		compatible = "zephyr,i2c-emul-controller"; /* in zephyr/boards/native/native_sim/native_sim.dts:297 */
+		reg = < 0x100 0x4 >;                       /* in zephyr/boards/native/native_sim/native_sim.dts:298 */
+		clock-frequency = < 0x186a0 >;             /* in zephyr/boards/native/native_sim/native_sim.dts:299 */
+		#address-cells = < 0x1 >;                  /* in zephyr/boards/native/native_sim/native_sim.dts:300 */
+		#size-cells = < 0x0 >;                     /* in zephyr/boards/native/native_sim/native_sim.dts:301 */
+		#forward-cells = < 0x1 >;                  /* in zephyr/boards/native/native_sim/native_sim.dts:302 */
+		status = "okay";                           /* in zephyr/boards/native/native_sim/native_sim.dts:303 */
+	};
+
+	/* node '/spi@200' defined in zephyr/boards/native/native_sim/native_sim.dts:306 */
+	spi0: spi@200 {
+		compatible = "zephyr,spi-emul-controller"; /* in zephyr/boards/native/native_sim/native_sim.dts:307 */
+		reg = < 0x200 0x4 >;                       /* in zephyr/boards/native/native_sim/native_sim.dts:308 */
+		clock-frequency = < 0x2faf080 >;           /* in zephyr/boards/native/native_sim/native_sim.dts:309 */
+		#address-cells = < 0x1 >;                  /* in zephyr/boards/native/native_sim/native_sim.dts:310 */
+		#size-cells = < 0x0 >;                     /* in zephyr/boards/native/native_sim/native_sim.dts:311 */
+		status = "okay";                           /* in zephyr/boards/native/native_sim/native_sim.dts:312 */
+	};
+
+	/* node '/espi@300' defined in zephyr/boards/native/native_sim/native_sim.dts:315 */
+	espi0: espi@300 {
+		compatible = "zephyr,espi-emul-controller"; /* in zephyr/boards/native/native_sim/native_sim.dts:316 */
+		reg = < 0x300 0x4 >;                        /* in zephyr/boards/native/native_sim/native_sim.dts:317 */
+		#address-cells = < 0x1 >;                   /* in zephyr/boards/native/native_sim/native_sim.dts:318 */
+		#size-cells = < 0x0 >;                      /* in zephyr/boards/native/native_sim/native_sim.dts:319 */
+		status = "okay";                            /* in zephyr/boards/native/native_sim/native_sim.dts:320 */
+	};
+
+	/* node '/mspi@400' defined in zephyr/boards/native/native_sim/native_sim.dts:323 */
+	mspi0: mspi@400 {
+		compatible = "zephyr,mspi-emul-controller"; /* in zephyr/boards/native/native_sim/native_sim.dts:324 */
+		reg = < 0x400 0x4 >;                        /* in zephyr/boards/native/native_sim/native_sim.dts:325 */
+		clock-frequency = < 0xee6b280 >;            /* in zephyr/boards/native/native_sim/native_sim.dts:326 */
+		#address-cells = < 0x1 >;                   /* in zephyr/boards/native/native_sim/native_sim.dts:327 */
+		#size-cells = < 0x0 >;                      /* in zephyr/boards/native/native_sim/native_sim.dts:328 */
+		status = "okay";                            /* in zephyr/boards/native/native_sim/native_sim.dts:329 */
+	};
+};
